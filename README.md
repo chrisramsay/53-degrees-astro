@@ -4,36 +4,36 @@
 ## Directories
 
 Config file
-`/media/data_1/web/sites/53-degrees-astro/pelicanconf.py`
+`/absolute/path/to/volumes/sites/53-degrees-astro/pelicanconf.py`
 
-Site itself
-`/media/data_1/web/sites/53-degrees-astro/`
+Site itself - mounted to `/site` in container
+`/absolute/path/to/volumes/sites/53-degrees-astro/build`
 
-Content directory
-`/media/data_1/web/sites/53-degrees-astro/content/`
+Content directory - mounted to `/content` in container
+`/absolute/path/to/volumes/sites/53-degrees-astro/content/`
 
-Output directory
-`/media/data_1/web/sites/53-degrees-astro/output/`
+Output directory mounted to `/output` in container
+`/absolute/path/to/volumes/sites/53-degrees-astro/output/`
 
-Theme directory (git repo), (chosen theme)
-`/media/data_1/web/pelican-themes/my-chosen-theme`
+Theme directory (git repo), (chosen theme)- mounted to `/theme` in container
+`/absolute/path/to/volumes/pelican-themes/my-chosen-theme`
 
-Plugins directory (git repo)
-`/media/data_1/web/pelican-plugins/`
+Plugins directory (git repo) - mounted to `/plugins` in container
+`/absolute/path/to/volumes/pelican-plugins/`
 
 ## Command
 
 ```
-docker run \
+BASE=/absolute/path/to/volumes
+sudo docker run \
     --rm \
-    --user $(UID):$(GID) \
-    --volume /media/data_1/web/sites/53-degrees-astro:/site \
-    --volume /media/data_1/web/sites/53-degrees-astro/content:/input \
-    --volume /media/data_1/web/sites/53-degrees-astro/output:/output \
-    --volume /media/data_1/web/pelican-themes/my-chosen-theme:/theme \
-    --volume /media/data_1/web/pelican-plugins:/plugins \
-    vorakl/alpine-pelican \
-        pelican /input -o /output -t /theme -s /site/pelicanconf.py
+    --volume ${BASE}/sites/53-degrees-astro/build:/site \
+    --volume ${BASE}/sites/53-degrees-astro/content:/content \
+    --volume ${BASE}/sites/53-degrees-astro/output:/output \
+    --volume ${BASE}/pelican-themes/my-chosen-theme:/theme \
+    --volume ${BASE}/pelican-plugins:/plugins \
+    chrisramsay/alpine-pelican \
+        pelican /content -o /output -t /theme -s /site/pelicanconf.py
 ```
 
 There!        

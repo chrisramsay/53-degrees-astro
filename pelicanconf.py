@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Chris Ramsay'
 SITENAME = '53-degrees-astro'
-SITEURL = ''
+SITEURL = 'file:///media/data_1/web/sites/53-degrees-astro/output'
 
 PATH = 'content'
 
@@ -31,5 +31,25 @@ SOCIAL = (('You can add links in your config file', '#'),
 
 DEFAULT_PAGINATION = 10
 
+# Theme and plugins
+PLUGIN_PATHS = ['/plugins', ]
+PLUGINS = [
+    'i18n_subsites',
+    'related_posts',
+    'summary',
+    'post_stats',
+    'render_math',
+    'series',
+    'tag_cloud',
+    'tipue_search',
+    ]
+JINJA_ENVIRONMENT = {
+    'extensions': ['jinja2.ext.i18n'],
+}
+BOOTSTRAP_THEME = 'darkly'
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+# Cache settings
+CACHE_CONTENT = False
+LOAD_CONTENT_CACHE = False
