@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/chrisramsay
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://chrisramsay.co.uk
+  * I am chrisramsay (https://keybase.io/chrisramsay) on keybase.
+  * I have a public key ASBKhs-CqihvB8ivFfVID4J7BGeL72TfcuhSZmzAcztXxwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01014065ba7be8eedadd61ae97fae6dec09b6e97659350bbd12646593ab741fa5c1f0a",
+      "host": "keybase.io",
+      "kid": "01204a86cf82aa286f07c8af15f5480f827b04678bef64df72e852666cc0733b57c70a",
+      "uid": "0787a507dc4af37bbfee656a33dd1000",
+      "username": "chrisramsay"
+    },
+    "merkle_root": {
+      "ctime": 1510999379,
+      "hash": "7d527929fd470826d345eddc2f4342dde2caf9159f6f239600b0e664f6c899a7ebd77d51f06e4ea5e668ac0c9ec1896fb15e46fcc79d810178ef547d49981951",
+      "hash_meta": "c8a15b5aff04d422d2e8f297b34a05c04b9bee5f8d96661330257a1b45ad75be",
+      "seqno": 1717329
+    },
+    "service": {
+      "hostname": "chrisramsay.co.uk",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.35"
+  },
+  "ctime": 1510999394,
+  "expire_in": 504576000,
+  "prev": "3bf939e49239552992cf7f38d1b28dcb45e5a2aa0c9db0105de9744bcad07a98",
+  "seqno": 22,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgSobPgqoobwfIrxX1SA+CewRni+9k33LoUmZswHM7V8cKp3BheWxvYWTFA017ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxNDA2NWJhN2JlOGVlZGFkZDYxYWU5N2ZhZTZkZWMwOWI2ZTk3NjU5MzUwYmJkMTI2NDY1OTNhYjc0MWZhNWMxZjBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNGE4NmNmODJhYTI4NmYwN2M4YWYxNWY1NDgwZjgyN2IwNDY3OGJlZjY0ZGY3MmU4NTI2NjZjYzA3MzNiNTdjNzBhIiwidWlkIjoiMDc4N2E1MDdkYzRhZjM3YmJmZWU2NTZhMzNkZDEwMDAiLCJ1c2VybmFtZSI6ImNocmlzcmFtc2F5In0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTEwOTk5Mzc5LCJoYXNoIjoiN2Q1Mjc5MjlmZDQ3MDgyNmQzNDVlZGRjMmY0MzQyZGRlMmNhZjkxNTlmNmYyMzk2MDBiMGU2NjRmNmM4OTlhN2ViZDc3ZDUxZjA2ZTRlYTVlNjY4YWMwYzllYzE4OTZmYjE1ZTQ2ZmNjNzlkODEwMTc4ZWY1NDdkNDk5ODE5NTEiLCJoYXNoX21ldGEiOiJjOGExNWI1YWZmMDRkNDIyZDJlOGYyOTdiMzRhMDVjMDRiOWJlZTVmOGQ5NjY2MTMzMDI1N2ExYjQ1YWQ3NWJlIiwic2Vxbm8iOjE3MTczMjl9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiY2hyaXNyYW1zYXkuY28udWsiLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4zNSJ9LCJjdGltZSI6MTUxMDk5OTM5NCwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsInByZXYiOiIzYmY5MzllNDkyMzk1NTI5OTJjZjdmMzhkMWIyOGRjYjQ1ZTVhMmFhMGM5ZGIwMTA1ZGU5NzQ0YmNhZDA3YTk4Iiwic2Vxbm8iOjIyLCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQGzYg3TvPCHCFZWrbV1PCQMpl+XIDYDR2R9ctueP+tLTlGOkB2dVgba577zsiqEa6K6jo6cKhoLHcuLeFy/MTACoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCATnlxNLQWHZVHj9RyAd8suUW0JVzCJoxbVBJqxAUtneKN0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/chrisramsay
+
+==================================================================
