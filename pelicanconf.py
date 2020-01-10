@@ -33,6 +33,7 @@ DEFAULT_PAGINATION = 10
 
 # Theme and plugins
 PLUGIN_PATHS = ['/plugins', ]
+# Always put minify at the end of plugins list
 PLUGINS = [
     'i18n_subsites',
     'related_posts',
@@ -42,6 +43,7 @@ PLUGINS = [
     'series',
     'tag_cloud',
     'tipue_search',
+     'minify',
     ]
 JINJA_ENVIRONMENT = {
     'extensions': ['jinja2.ext.i18n'],
