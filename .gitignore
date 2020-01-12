@@ -1,3 +1,9 @@
+# Custom
+preview_settings.py
+publish_settings.py
+cache/*
+configs/cache/*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

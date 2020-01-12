@@ -2,15 +2,19 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+# Main
 AUTHOR = 'Chris Ramsay'
 SITENAME = '53-degrees-astro'
 SITEURL = 'http://172.17.0.2'
-
 PATH = 'content'
-
 TIMEZONE = 'Europe/Paris'
-
 DEFAULT_LANG = 'en'
+DEFAULT_PAGINATION = 10
+DEFAULT_METADATA = {
+    'status': 'draft',
+	'author': 'Chris Ramsay',
+}
+DEFAULT_DATE = 'fs'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -54,17 +58,9 @@ NEWEST_FIRST_ARCHIVES = True
 YEAR_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/index.html'
 
-# Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
-
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
-
-DEFAULT_PAGINATION = 10
+SOCIAL = (('twitter', 'http://twitter.com/53_astro'),
+          )
 
 # Theme and plugins
 PLUGIN_PATHS = ['/plugins', ]
@@ -78,19 +74,13 @@ PLUGINS = [
     'series',
     'tag_cloud',
     'tipue_search',
-    'post_stats',
     'minify',
     ]
 
+# Specific to pelican-bootstrap theme
 JINJA_ENVIRONMENT = {
     'extensions': ['jinja2.ext.i18n'],
 }
-
-# Specific to pelican-bootstrap theme
-#TWITTER_USERNAME = 'chris_ramsay'
-#TWITTER_WIDGET_ID = '508154314989137921'
-#KEYBASE_USER = 'chrisramsay'
-#KEYBASE_64BIT = 'AC94 F4DE 41C2 E99B'
 PYGMENTS_STYLE = 'solarazeddark'
 DISPLAY_TAGS_INLINE = True
 DISPLAY_ARTICLE_INFO_ON_INDEX = True
@@ -98,10 +88,7 @@ DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
 SHOW_ARTICLE_AUTHOR = True
 SHOW_SERIES = True
 BOOTSTRAP_THEME = 'darkly'
-ABOUT_ME='<a class="twitter-timeline" data-dnt="true" data-theme="dark" href="https://twitter.com/53_astro?ref_src=twsrc%5Etfw">Tweets by 53_astro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> '
-
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+#ABOUT_ME='<a class="twitter-timeline" data-dnt="true" data-theme="dark" href="https://twitter.com/53_astro?ref_src=twsrc%5Etfw">Tweets by 53_astro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> '
 
 # Static files
 # Files
