@@ -672,6 +672,8 @@ average when viewed from the earth’s surface. The easy way to have a go at
 graphing this is to therefore make two calculations based on two sunsets, one at
 0 degrees horizon, the other at -0.53 degrees horizon, and then compare.
 
+All times below are expressed in seconds.
+
 .. code-block:: python
 
     # Prepare
@@ -774,6 +776,8 @@ The gap:
 
     109.48762800000003
 
+Okay, well almost 2 minutes.
+
 Let’s make a chart and have a look at the results:
 
 .. code-block:: python
@@ -797,8 +801,8 @@ Let’s make a chart and have a look at the results:
 
 So from the graph above, it can be seen that there are two minima in the year
 where the sun sets the fastest - the middle of March and towards the end of
-September. The third week in June gives us the longest sunset, with the third
-week of December the second but smaller maximum of the year. These all
+September. The third week in June gives us the longest duration sunset, with the
+third week of December the second but smaller maximum of the year. These all
 correspond with the equinoxes and solstices as you would expect.
 
 Conclusion
