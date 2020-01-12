@@ -81,6 +81,7 @@ PLUGINS = [
     'post_stats',
     'minify',
     ]
+
 JINJA_ENVIRONMENT = {
     'extensions': ['jinja2.ext.i18n'],
 }
@@ -90,12 +91,14 @@ JINJA_ENVIRONMENT = {
 #TWITTER_WIDGET_ID = '508154314989137921'
 #KEYBASE_USER = 'chrisramsay'
 #KEYBASE_64BIT = 'AC94 F4DE 41C2 E99B'
+PYGMENTS_STYLE = 'solarazeddark'
 DISPLAY_TAGS_INLINE = True
 DISPLAY_ARTICLE_INFO_ON_INDEX = True
 DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
 SHOW_ARTICLE_AUTHOR = True
 SHOW_SERIES = True
 BOOTSTRAP_THEME = 'darkly'
+ABOUT_ME='<a class="twitter-timeline" data-dnt="true" data-theme="dark" href="https://twitter.com/53_astro?ref_src=twsrc%5Etfw">Tweets by 53_astro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> '
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
@@ -106,11 +109,13 @@ STATIC_PATHS = [
     'static/robots.txt',
     'static/keybase.txt',
     'static/favicon.ico',
+    'static/solarazeddark.css',
     ]
 EXTRA_PATH_METADATA = {
     'static/robots.txt': {'path': 'robots.txt'},
     'static/keybase.txt': {'path': 'keybase.txt'},
     'static/favicon.ico': {'path': 'favicon.ico'},
+    'static/solarazeddark.css': {'path': 'theme/css/pygments/solarazeddark.css'},
     }
 
 # Cache settings
