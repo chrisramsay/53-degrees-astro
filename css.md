@@ -1,7 +1,7 @@
 Update
 ######
 
-New bg colour in `<pre>` formatted areas
+New bg colour in `<pre>` formatted areas - #c1b2b2
 
 https://53-degrees-astro.com/theme/css/bootstrap.darkly.min.css
 
