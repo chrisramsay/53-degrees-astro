@@ -1,6 +1,6 @@
 #! /bin/bash
 
-BASE=/media/data_1/web
+BASE=${HOME}/web
 sudo docker run \
     --rm \
     --volume ${BASE}/sites/53-degrees-astro/build:/site \
@@ -8,5 +8,6 @@ sudo docker run \
     --volume ${BASE}/sites/53-degrees-astro/local:/output \
     --volume ${BASE}/pelican-themes/pelican-bootstrap3:/theme \
     --volume ${BASE}/pelican-plugins:/plugins \
-    chrisramsay/alpine-pelican \
-        pelican -v /content -o /output -t /theme -s /site/configs/local_conf.py
+    --volume ${BASE}/sites/notebooks/notebooks:/notebooks \
+    chrisramsay/alpine-pelican:latest \
+        pelican /content -o /output -t /theme -s /site/configs/local_conf.py

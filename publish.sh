@@ -1,6 +1,6 @@
 #! /bin/bash
 
-BASE=/media/data_1/web
+BASE=${HOME}/web
 sudo docker run \
     --rm \
     --volume ${BASE}/sites/53-degrees-astro/build:/site \
