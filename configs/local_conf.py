@@ -3,8 +3,8 @@
 from __future__ import unicode_literals
 
 # Main
-AUTHOR = 'Chris Ramsay'
-SITENAME = '53-degrees-astro'
+AUTHOR = '53° Astro'
+SITENAME = '53° Astro'
 SITEURL = 'http://172.17.0.2'
 PATH = 'content'
 TIMEZONE = 'Europe/Paris'
@@ -12,7 +12,7 @@ DEFAULT_LANG = 'en'
 DEFAULT_PAGINATION = 10
 DEFAULT_METADATA = {
     'status': 'draft',
-	'author': 'Chris Ramsay',
+	'author': '53° Astro',
 }
 DEFAULT_DATE = 'fs'
 
@@ -59,8 +59,10 @@ YEAR_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/index.html'
 
 # Social widget
-SOCIAL = (('twitter', 'http://twitter.com/53_astro'),
-          )
+SOCIAL = (
+    ('twitter', 'http://twitter.com/53_astro'),
+    ('instagram', 'https://www.instagram.com/53degreesastro'),
+    )
 
 # Theme and plugins
 PLUGIN_PATHS = ['/plugins', ]
@@ -88,7 +90,7 @@ DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
 SHOW_ARTICLE_AUTHOR = True
 SHOW_SERIES = True
 BOOTSTRAP_THEME = 'darkly'
-#ABOUT_ME='<a class="twitter-timeline" data-dnt="true" data-theme="dark" href="https://twitter.com/53_astro?ref_src=twsrc%5Etfw">Tweets by 53_astro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> '
+BANNER = 'mammatus.jpg'
 
 # Static files
 # Files
@@ -97,12 +99,16 @@ STATIC_PATHS = [
     'static/keybase.txt',
     'static/favicon.ico',
     'static/solarazeddark.css',
+    'static/53_deg_logo_wbg.png',
+    'static/mammatus.jpg',
     ]
 EXTRA_PATH_METADATA = {
     'static/robots.txt': {'path': 'robots.txt'},
     'static/keybase.txt': {'path': 'keybase.txt'},
     'static/favicon.ico': {'path': 'favicon.ico'},
     'static/solarazeddark.css': {'path': 'theme/css/pygments/solarazeddark.css'},
+    'static/53_deg_logo_wbg.png': {'path': '53_deg_logo_wbg.png'},
+    'static/mammatus.jpg': {'path': 'mammatus.jpg'},
     }
 
 # Cache settings

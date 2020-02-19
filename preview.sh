@@ -8,6 +8,5 @@ sudo docker run \
     --volume ${BASE}/sites/53-degrees-astro/local:/output \
     --volume ${BASE}/pelican-themes/pelican-bootstrap3:/theme \
     --volume ${BASE}/pelican-plugins:/plugins \
-    --volume ${BASE}/sites/notebooks/notebooks:/notebooks \
     chrisramsay/alpine-pelican:latest \
-        pelican /content -o /output -t /theme -s /site/configs/local_conf.py
+        pelican -v /content -o /output -t /theme -s /site/configs/local_conf.py
