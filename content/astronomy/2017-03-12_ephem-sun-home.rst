@@ -4,7 +4,6 @@ Fun with the Sun and PyEphem
 :title: Fun with the Sun and PyEphem
 :slug: fun-with-the-sun-and-pyephem
 :date: 2017-03-12
-:category: Software
 :tags: astronomy, python, programming
 :author: Chris Ramsay
 :status: Published

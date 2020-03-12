@@ -4,7 +4,6 @@ Astro Pier Part One
 :title: Astro Pier Part One
 :slug: astro-pier-part-one
 :date: 2020-01-18
-:category: DIY Kit
 :tags: astronomy, hardware, engineering
 :author: Chris Ramsay
 :status: Published
@@ -16,8 +15,13 @@ Astro Pier Part One
 
 .. PELICAN_BEGIN_SUMMARY
 
-I have finally started work on the telescope pier in the garden
-
+This article chronicles the process of building a permanent astronomy telescope
+pier in my garden. A permanent pier makes the setting up process for an night of
+astrophotography or visual observing far less laborious. This is because the
+pier is already aligned with the celestial pole, via the North peg on top of the
+mount adapter. Power and network adapters are immediately to hand, removing the
+hassle of laying cables out from the warm room and putting them away later
+after.
 
 |nbsp|
 
@@ -27,12 +31,13 @@ I have finally started work on the telescope pier in the garden
    :scale: 100
    :alt: Cutting the trench from the warm room to the pier site
 
+*Photo comment*
 |nbsp|
-
-More stuff here
 
 .. PELICAN_END_SUMMARY
 
+Above is the trench in the process of being cut, from the "warm room" to the
+pier site.
 
 |nbsp|
 

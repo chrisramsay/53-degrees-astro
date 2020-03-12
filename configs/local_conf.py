@@ -24,6 +24,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # URLs
+USE_FOLDER_AS_CATEGORY = True
 # URL settings
 ## Makes article like: /posts/year/month/article-slug/
 ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{slug}'
