@@ -70,7 +70,7 @@ PLUGIN_PATHS = ['/plugins', ]
 # Always put minify at the end of plugins list
 PLUGINS = [
     'i18n_subsites',
-    'related_posts',
+    #'related_posts',
     'summary',
     'post_stats',
     'render_math',
@@ -91,7 +91,7 @@ DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
 SHOW_ARTICLE_AUTHOR = True
 SHOW_SERIES = True
 BOOTSTRAP_THEME = 'darkly'
-BANNER = 'mammatus.jpg'
+BANNER = 'images/mammatus.jpg'
 
 # Static files
 # Files
@@ -108,8 +108,8 @@ EXTRA_PATH_METADATA = {
     'static/keybase.txt': {'path': 'keybase.txt'},
     'static/favicon.ico': {'path': 'favicon.ico'},
     'static/solarazeddark.css': {'path': 'theme/css/pygments/solarazeddark.css'},
-    'static/53_deg_logo_wbg.png': {'path': '53_deg_logo_wbg.png'},
-    'static/mammatus.jpg': {'path': 'mammatus.jpg'},
+    'static/53_deg_logo_wbg.png': {'path': 'images/53_deg_logo_wbg.png'},
+    'static/mammatus.jpg': {'path': 'images/mammatus.jpg'},
     }
 
 # Cache settings

@@ -10,3 +10,5 @@ sudo docker run \
     --volume ${BASE}/pelican-plugins:/plugins \
     chrisramsay/alpine-pelican:latest \
         pelican -v /content -o /output -t /theme -s /site/configs/local_conf.py
+
+sudo chown -R raz: ${BASE}/sites/53-degrees-astro/local

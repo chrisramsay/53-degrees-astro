@@ -1,11 +1,11 @@
 Astro Pier Part One
 -------------------
 
-:title: Astro Pier Part One
+:title: Astro Pier - Part One
 :slug: astro-pier-part-one
 :date: 2020-01-18
 :tags: astronomy, hardware, engineering
-:author: Chris Ramsay
+:author: 53° Astro
 :status: Published
 
 .. |nbsp| unicode:: 0xA0
@@ -20,8 +20,7 @@ pier in my garden. A permanent pier makes the setting up process for an night of
 astrophotography or visual observing far less laborious. This is because the
 pier is already aligned with the celestial pole, via the North peg on top of the
 mount adapter. Power and network adapters are immediately to hand, removing the
-hassle of laying cables out from the warm room and putting them away later
-after.
+hassle of laying cables out from the shed and putting them away later after.
 
 |nbsp|
 
@@ -29,15 +28,17 @@ after.
    :width: 640
    :height: 293
    :scale: 100
-   :alt: Cutting the trench from the warm room to the pier site
+   :alt: Turf cut back where the trench will be dug
 
-*Photo comment*
+*Turf cut back where the trench will be dug*
 |nbsp|
 
 .. PELICAN_END_SUMMARY
 
-Above is the trench in the process of being cut, from the "warm room" to the
-pier site.
+The trench is approximately 50 cm deep, keeping the cables far enough
+underground to be out of the way of anything that might happen in the garden.
+I acquired some red polypropylene cable conduit, with an inside diameter of
+approximately 27 mm to be the path for the cable from the shed to the pier.
 
 |nbsp|
 
@@ -45,11 +46,15 @@ pier site.
    :width: 640
    :height: 293
    :scale: 100
-   :alt: Cutting the trench from the warm room to the pier site
+   :alt: Red polypropylene conduit laid out ready to be placed in the trench
 
+*Red polypropylene conduit laid out ready to be placed in the trench*
 |nbsp|
 
-There
+The conduit carries three separate cables: a 3.0 mm\ :sup:`2` 33 Amp twin core
+12 volt automotive cable, a 2.5 mm\ :sup:`2` twin and earth 240 VAC mains cable
+and a Cat 5e network cable. These will all break out into waterproof enclosures
+mounted on the side of the pier.
 
 |nbsp|
 
@@ -57,11 +62,15 @@ There
    :width: 640
    :height: 293
    :scale: 100
-   :alt: Cutting the trench from the warm room to the pier site
+   :alt: Trench cut into the path at the side of the shed
 
+*Trench cut into the path at the side of the shed*
 |nbsp|
 
-And More
+As can be seen in the picture above I had to cut a trench into the path at the
+side of the shed to get the cables into the building where the services are.
+Being that the concrete was old (25 years +), it was very hard and took a long
+time to get through.
 
 |nbsp|
 
@@ -69,13 +78,15 @@ And More
    :width: 640
    :height: 293
    :scale: 100
-   :alt: Cutting the trench from the warm room to the pier site
+   :alt: Cables entering the shed
 
+*Cables entering the shed*
 |nbsp|
 
-Hey##
-
-And More
+The cables enter the shed via a waterproof electrical box. This will make access
+to the conduit easier should I need to add another cable one day; highly
+unlikely, I think. Having the box there also avoids having to make a difficult
+90° turn from under the path into the brickwork.
 
 |nbsp|
 
@@ -83,8 +94,13 @@ And More
    :width: 640
    :height: 293
    :scale: 100
-   :alt: Cutting the trench from the warm room to the pier site
+   :alt: The pier site with the cable in place
 
+*The pier site with the conduit in place*
 |nbsp|
 
-Hey##
+At the other end of the conduit lies the pier site itself (of course!). At the
+moment there is just a large hole ready for the concrete pour and a lintel where
+the base of the pier will fit. The conduit emerges near the base of the pier
+site and it will then turn 90° in an upwards direction, going up inside the pier
+in order to break out near the top.

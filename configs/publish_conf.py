@@ -12,7 +12,7 @@ DEFAULT_LANG = 'en'
 DEFAULT_PAGINATION = 10
 DEFAULT_METADATA = {
     'status': 'draft',
-	'author': 'Chris Ramsay',
+	'author': '53° Astro',
 }
 DEFAULT_DATE = 'fs'
 
@@ -24,6 +24,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # URLs
+USE_FOLDER_AS_CATEGORY = True
 # URL settings
 ## Makes article like: /posts/year/month/article-slug/
 ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{slug}'
@@ -67,7 +68,7 @@ PLUGIN_PATHS = ['/plugins', ]
 # Always put minify at the end of plugins list
 PLUGINS = [
     'i18n_subsites',
-    'related_posts',
+    #'related_posts',
     'summary',
     'post_stats',
     'render_math',
@@ -88,7 +89,7 @@ DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
 SHOW_ARTICLE_AUTHOR = True
 SHOW_SERIES = True
 BOOTSTRAP_THEME = 'darkly'
-#ABOUT_ME='<a class="twitter-timeline" data-dnt="true" data-theme="dark" href="https://twitter.com/53_astro?ref_src=twsrc%5Etfw">Tweets by 53_astro</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> '
+BANNER = 'images/mammatus.jpg'
 
 # Static files
 # Files
@@ -97,12 +98,16 @@ STATIC_PATHS = [
     'static/keybase.txt',
     'static/favicon.ico',
     'static/solarazeddark.css',
+    'static/53_deg_logo_wbg.png',
+    'static/mammatus.jpg',
     ]
 EXTRA_PATH_METADATA = {
     'static/robots.txt': {'path': 'robots.txt'},
     'static/keybase.txt': {'path': 'keybase.txt'},
     'static/favicon.ico': {'path': 'favicon.ico'},
     'static/solarazeddark.css': {'path': 'theme/css/pygments/solarazeddark.css'},
+    'static/53_deg_logo_wbg.png': {'path': 'images/53_deg_logo_wbg.png'},
+    'static/mammatus.jpg': {'path': 'images/mammatus.jpg'},
     }
 
 # Cache settings
