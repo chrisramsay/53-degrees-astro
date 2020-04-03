@@ -13,14 +13,26 @@ Astro Pier Part One
 
 .. contents::
 
+Introduction
+============
+
 .. PELICAN_BEGIN_SUMMARY
 
-This article chronicles the process of building a permanent astronomy telescope
-pier in my garden. A permanent pier makes the setting up process for an night of
-astrophotography or visual observing far less laborious. This is because the
-pier is already aligned with the celestial pole, via the North peg on top of the
-mount adapter. Power and network adapters are immediately to hand, removing the
-hassle of laying cables out from the shed and putting them away later after.
+This series of articles will chronicle the process of building a permanent
+astronomy telescope pier in my garden. A permanent pier makes the setting up
+process for an night of astrophotography or visual observing far less laborious.
+This is because the pier is already aligned with the celestial pole, via the
+North peg on top of the mount adapter. Power and network adapters are
+immediately to hand, removing the work of laying cables out from the shed and
+putting them away later after each observing or astrophotography session.
+
+.. PELICAN_END_SUMMARY
+
+Cutting the Turf
+================
+
+Well, I had to start somewhere, so I decided to cut a trench to the site of the
+pier as my first step.
 
 |nbsp|
 
@@ -33,12 +45,17 @@ hassle of laying cables out from the shed and putting them away later after.
 *Turf cut back where the trench will be dug*
 |nbsp|
 
-.. PELICAN_END_SUMMARY
-
 The trench is approximately 50 cm deep, keeping the cables far enough
 underground to be out of the way of anything that might happen in the garden.
-I acquired some red polypropylene cable conduit, with an inside diameter of
-approximately 27 mm to be the path for the cable from the shed to the pier.
+Thankfully the ground here is light soil and rock-free, therefore quite easy
+to cut into.
+
+Installing the Cabling
+======================
+
+The next step was to get some cables into the ground. I acquired some red
+polypropylene cable conduit, with an inside diameter of approximately 27 mm to
+act as a waterproof path for the cable from the shed to the pier.
 
 |nbsp|
 
