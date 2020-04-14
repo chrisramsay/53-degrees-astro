@@ -22,15 +22,21 @@ Setting up a new telescope is not an easy task. It takes some planning and
 thought to get the set up right first time. I have made an attempt to plan out
 everything that I will need before getting started. Using a handy copy of Visio
 I had lying about I have put together a handful of block level diagrams to help
-me out.
+me out. This process gives me an overview of what is needed to make sure that
+the system is complete and that everything has been thought of, as far as
+possible. Following is a run through of my plans and my thoughts regarding what
+issues they raised.
 
 .. PELICAN_END_SUMMARY
 
 Block Level Diagrams
 ====================
 
-Below I have prepared some block level diagrams to assist in my cabling the
-entire telescope set up.
+As can be seen, I started by preparing some block level diagrams to assist in
+thinking out the entire telescope set up. The system was divided into multiple
+systems and blocks divided on what the modules are transmitting from block to
+block. The imaging train transmits photons between blocks, so that seemed like
+a pretty obvious place to start:
 
 Imaging Train
 +++++++++++++
@@ -49,8 +55,14 @@ account for the refractive index of the filters.
 *Block level imaging train in real life*
 
 As is apparent in the photo above, I'd not yet added the off axis guide camera
-to the set up yet. That will happen once I have the main imaging camera nicely
-focused.
+(OAG) to the set up yet. That will happen once I have the main imaging camera
+properly focused. From right to left, the image shows the Skywatcher field
+flattener, a custom made 15 mm spacer, a Starlight Xpress off axis guider and
+7 position filter wheel, and finally, the Starlight Xpress CCD imaging camera.
+The interfaces between the rear face of the field flattener and the front face of
+the OAG / filter wheel are male M62 thread and male T-thread (42 mm)
+respectively, necessitating a custom made spacer beautifully created by John
+at `JTech Design`_.
 
 Once everything was together it was time to get drawing. Below is a plan of just
 the imaging train as above with the light path show with blue arrows. Not much
@@ -86,14 +98,13 @@ getting a powered USB hub, or, do I have enough USB A to USB B leads?
 *Block level physical connections*
 
 The block plan also made sure that I did not forget about getting power to the
-Raspberry Pi 4; these are now powered via a USB C connector.
+Raspberry Pi 4; these latest models are now powered via a USB C connector.
 
 USB Connections
 +++++++++++++++
 
-From the
-
-USB connections mapped next
+From the overall plan I subsequently extracted the devices with a USB connection
+and any associated USB cable.
 
 .. image:: https://live.staticflickr.com/65535/49733170253_b8c821283b_c.jpg
    :width: 800
@@ -114,21 +125,4 @@ Power and network mapped out next
    :scale: 100
    :alt: Block level USB connections
 
-*Block level USB connections*
-
-Pegasus UPB v2
-==============
-
-
-
-https://indilib.org/devices/auxiliary/pegasus-ultimate-power-box.html
-
-/dev/ttyUSB2 - Baud 9600
-
-Mount
-
-/dev/ttyUSB0 - Baud 9600
-
-Pegasus DMFC
-
-/dev/ttyUSB1 - Baud 19200
+*Block level power and network connections*
