@@ -6,7 +6,7 @@ Pegasus UPB v2 Into the Mix
 :date: 2020-04-14
 :tags: astronomy, hardware, engineering
 :author: 53° Astro
-:status: Published
+:status: Draft
 
 .. |nbsp| unicode:: 0xA0
   :trim:
