@@ -14,7 +14,7 @@ Pegasus UPB v2 Into the Mix
 .. contents::
 
 Pegasus UPB v2
-==============
+++++++++++++++
 
 
 

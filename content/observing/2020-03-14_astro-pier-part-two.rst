@@ -14,7 +14,7 @@ Astro Pier Part Two
 .. contents::
 
 Introduction
-============
+++++++++++++
 
 .. PELICAN_BEGIN_SUMMARY
 
@@ -23,7 +23,7 @@ Foo
 .. PELICAN_END_SUMMARY
 
 Building the Base
-=================
++++++++++++++++++
 
 .. image:: https://live.staticflickr.com/65535/49521150577_299ebfcbc2_z.jpg
    :width: 640

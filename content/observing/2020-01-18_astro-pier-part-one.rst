@@ -14,7 +14,7 @@ Astro Pier Part One
 .. contents::
 
 Introduction
-============
+++++++++++++
 
 .. PELICAN_BEGIN_SUMMARY
 
@@ -29,7 +29,7 @@ putting them away later after each observing or astrophotography session.
 .. PELICAN_END_SUMMARY
 
 Cutting the Turf
-================
+++++++++++++++++
 
 Well, I had to start somewhere, so I decided to cut a trench to the site of the
 pier as my first step.
@@ -51,7 +51,7 @@ Thankfully the ground here is light soil and rock-free, therefore quite easy
 to cut into.
 
 Installing the Cabling
-======================
+++++++++++++++++++++++
 
 The next step was to get some cables into the ground. I acquired some red
 polypropylene cable conduit, with an inside diameter of approximately 27 mm to

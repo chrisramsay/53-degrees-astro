@@ -14,7 +14,7 @@ Equipment Setup Thoughts Part One
 .. contents::
 
 Introduction
-============
+++++++++++++
 
 .. PELICAN_BEGIN_SUMMARY
 
@@ -38,12 +38,12 @@ via a combination of filters, occasionally re-focus depending on temperature,
 take care of meridian flips if necessary, and finally shut down when the session
 is complete.
 
-For the (computing) brains behind the operation, a `Rasberry Pi 4`_ 4 was always the
+For the (computing) brains behind the operation, a `Raspberry Pi 4`_ 4 was always the
 goal, being that they are small, have reasonably low power requirements and run
 on Linux, an operating system I am truly comfortable with.
 
 Block Level Diagrams
-====================
+++++++++++++++++++++
 
 As can be seen, I started by preparing some block level diagrams to assist in
 mapping out the entire telescope set up. The system was divided into multiple
@@ -52,7 +52,7 @@ block. The imaging train transmits photons between blocks, so that seemed like
 a pretty obvious place to start:
 
 Imaging Train
-+++++++++++++
+~~~~~~~~~~~~~
 
 So this is how the image capture part of the set up currently looks. The photo
 below was taken whilst I was checking the back focus from the Skywatcher field
@@ -91,7 +91,7 @@ in itself, but makes sense once it's part of the rest of the plan.
 *Block level imaging train plan*
 
 Overall Block Plan
-+++++++++++++++++++
+~~~~~~~~~~~~~~~~~~~
 
 Next was to try and understand just how many cables would be needed, what type
 and what sort of lengths. Also, each piece of the puzzle has different types of
@@ -119,7 +119,7 @@ considered were, for example, sending 5 volts via the header pins (unfortunately
 bypassing some current protection devices in the process).
 
 USB Connections
-+++++++++++++++
+~~~~~~~~~~~~~~~
 
 From the overall plan I subsequently extracted the devices with a USB connection
 and any associated USB cable. This lead me to my first thought with the USB
@@ -140,17 +140,16 @@ Regarding cables, I was going to need a mix of different types. A number of mini
 to mini and mini to USB B cables to connect to the in-built hub on the SX 814 to
 provide power and control for the off axis guide camera, the filter wheel and
 the focus cube. The in-built hub on the imaging camera would then be connected
-to a theoretical powered USB hub, and from there communicate with the Raspberry
-Pi. Control of the EQ6R Pro mount would be achieved via a USB / RS232 lead from
-this hub also.
+to a theoretical standalone powered USB hub, and from there communicate with the
+Raspberry Pi. Control of the EQ6R Pro mount would be achieved via a Lynx Astro
+USB to EQ direct lead from this standalone hub also.
 
 Thankfully I have a habit of hoarding old cables and connectors that come with
 electrical items purchased over the years. This came in useful as I was able to
-find many USB A to B leads, of varying lengths, as required for the cable layout
-on the telescope.
+find all the leads as required for the cable layout on the telescope.
 
 Power and Network
-+++++++++++++++++
+~~~~~~~~~~~~~~~~~
 
 Once I was happy with the USB layout, it was time to turn to looking at the
 power and network layer. Again, the plan only has items that require power from
@@ -167,4 +166,4 @@ power and network layer. Again, the plan only has items that require power from
 .. links
 
 .. _`J-Tech Design`: https://j-techdesign.com/
-.. _`Rasberry Pi 4`: https://www.raspberrypi.org/products/raspberry-pi-4-model-b/
+.. _`Raspberry Pi 4`: https://www.raspberrypi.org/products/raspberry-pi-4-model-b/
