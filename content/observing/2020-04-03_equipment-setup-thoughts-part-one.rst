@@ -157,6 +157,15 @@ Once I was happy with the USB layout, it was time to turn to looking at the
 power and network layer. Again, the plan only has items that require power from
 12 V cables and the cable runs themselves.
 
+From the plan, it appears that I am going to need to find a neat way of
+distributing 12 volts to a number of different bits of equipment on the
+telescope. I have spent quite some time on the astronomy forums researching how
+people achieve this. There does not really seem to be a single standard - no
+surprises there. Some systems seem to be based on automotive type connectors
+with blade fuses and so on, others utilise "Anderson Power Pole" connectors as
+used by the Ham Radio community. This is something that definitely needs more
+thought.
+
 .. image:: https://live.staticflickr.com/65535/49734039312_c46bc7e2bb_c.jpg
    :width: 800
    :height: 564
@@ -165,13 +174,14 @@ power and network layer. Again, the plan only has items that require power from
 
 *Block level power and network connections*
 
-From the plan, it appears that I am going to need to find a neat way of
-distributing 12 volts. I have spent quite some time on the astronomy forums
-researching how people achieve this. There does not really seem to be a single
-standard - no surprises there. Some systems seem to be based on automotive type
-connectors with blade fuses and so on, others utilise "Anderson Power Pole"
-connectors as used by the Ham Radio community. This is something that
-definitely needs more thought.
+Some thought needs to be put towards handling dew that will no doubt build up on
+the objective lens on the telescope. Currently, I have a home built dew
+prevention system that requires a 12 volt supply (not a problem then) but it is
+very bulky; finding some space to mount it might be quite tricky.
+
+The gold standard (perfect) solution for all this would be a combined USB hub
+and 12 V power supply complete with a dew heater controller system. I wonder if
+such a thing exists?
 
 .. links
 
