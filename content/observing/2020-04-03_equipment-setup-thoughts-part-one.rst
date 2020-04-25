@@ -38,7 +38,7 @@ of lights via a combination of filters, occasionally re-focus depending on
 temperature variation, take care of meridian flips if necessary, and finally
 shut down when the session is complete.
 
-For the (computing) brains behind the operation, a `Raspberry Pi 4`_ 4 has
+For the (computing) brains behind the operation, a `Raspberry Pi 4`_ has
 always been the goal, being that they are small, have reasonably low power
 requirements and run on Linux, an operating system I am truly comfortable with.
 
