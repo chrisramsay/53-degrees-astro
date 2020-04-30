@@ -116,8 +116,12 @@ the Skywatcher Star Adventurer mount in order to track at Sidereal rate. Some
 test pictures were taken initially, mainly to test various exposures, times and
 angles on the sky.
 
+Night 1 - 2020-04-21
+~~~~~~~~~~~~~~~~~~~~
+
 Below is a single exposure, taken from a set of test shots, 120 seconds exposure
-at ISO 800. Stacked using Rendered in black and white
+at ISO 800. Stacked using Deep Sky Stacker, polished up with Affinity Photo in
+black and white.
 
 .. image:: https://live.staticflickr.com/65535/49816078286_18557e90e9_c.jpg
     :width: 800
@@ -127,7 +131,13 @@ at ISO 800. Stacked using Rendered in black and white
 
 *Lyrid Meteor bursts in Leo, taken 2020-04-21 at 22:21:06 UT*
 
-Hello
+I followed the above test shot with a set of exposures aimed at capturing the
+post midnight peak - from 0000 to 0300.
+
+100 files at 120s each.
+
+Night 2 - 2020-04-22
+~~~~~~~~~~~~~~~~~~~~
 
 .. image:: https://live.staticflickr.com/65535/49829090808_b02c6ec6b7_c.jpg
     :width: 800
