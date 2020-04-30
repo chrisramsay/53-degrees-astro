@@ -86,6 +86,84 @@ that some moon shots would be a great way of giving it some first light.
 
 *Pink Moon Rising with Moody Clouds on 2020-04-08 at 21:23:46 UT*
 
+Phase 99% 15.7 days old
+
+.. image:: https://live.staticflickr.com/65535/49837890283_7e1afc5533_c.jpg
+    :width: 800
+    :height: 532
+    :scale: 100
+    :alt: Moon, taken 2020-04-25 at 20:57 UT
+
+Test
+
+.. image:: https://live.staticflickr.com/65535/49838721632_603deeb289_c.jpg
+    :width: 800
+    :height: 533
+    :scale: 100
+    :alt: Moon, taken 2020-04-29 at 22:02 UT
+
+Lyrid Meteor Shower
++++++++++++++++++++
+
+This year I decided to have an attempt at getting a picture or two from the
+annual `Lyrid meteor shower`_; capturing a meteor is something I have never
+tried before. The obvious solution seemed to be to aim a camera at or around
+the radiant area in the sky around the `constellation of Lyra`_.
+
+It was time to bring out the F3.5/8 mm UMC Fish Eye lens and have a few hours
+under the stars. I decided to put the camera (Canon 450D astro-modified) onto
+the Skywatcher Star Adventurer mount in order to track at Sidereal rate. Some
+test pictures were taken initially, mainly to test various exposures, times and
+angles on the sky.
+
+Below is a single exposure, taken from a set of test shots, 120 seconds exposure
+at ISO 800. Stacked using Rendered in black and white
+
+.. image:: https://live.staticflickr.com/65535/49816078286_18557e90e9_c.jpg
+    :width: 800
+    :height: 533
+    :scale: 100
+    :alt: Lyrid Meteor bursts in Leo, taken 2020-04-21 at 22:21:06 UT
+
+*Lyrid Meteor bursts in Leo, taken 2020-04-21 at 22:21:06 UT*
+
+Hello
+
+.. image:: https://live.staticflickr.com/65535/49829090808_b02c6ec6b7_c.jpg
+    :width: 800
+    :height: 533
+    :scale: 100
+    :alt: Meteor in Coma Berenices during the Lyrids shower, taken 2020-04-22 at 23:07:19 UT
+
+*Meteor in Coma Berenices during the Lyrids shower on 2020-04-22 at 23:07:19 UT*
+
+Yeah
+
+.. image:: https://live.staticflickr.com/65535/49837943338_d8b656e8c4_c.jpg
+    :width: 800
+    :height: 533
+    :scale: 100
+    :alt: Lyrid meteor in Ursa Major and Minor
+
+Star Trails
++++++++++++
+
+.. image:: https://live.staticflickr.com/65535/49787700052_1d75d528f4_c.jpg
+    :width: 800
+    :height: 533
+    :scale: 100
+    :alt: Back Garden Star Trails 2020-04-16
+
+*Back Garden Star Trails 2020-04-16*
+
+.. image:: https://live.staticflickr.com/65535/49816386582_e51fd855cb_c.jpg
+    :width: 800
+    :height: 533
+    :scale: 100
+    :alt: Looking for Lyrids 2020-04-20
+
+*Looking for Lyrids 2020-04-20*
+
 
 .. links
 
@@ -95,3 +173,5 @@ that some moon shots would be a great way of giving it some first light.
 .. _`Pleiades open star cluster`: https://en.wikipedia.org/wiki/Pleiades
 .. _`α Tauri, Aldebaran`: https://en.wikipedia.org/wiki/Aldebaran
 .. _`Hyades`: https://en.wikipedia.org/wiki/Hyades_(star_cluster)
+.. _`Lyrid meteor shower`: https://en.wikipedia.org/wiki/Lyrids
+.. _`constellation of Lyra`: https://en.wikipedia.org/wiki/Lyra
