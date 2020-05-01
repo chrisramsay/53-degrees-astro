@@ -27,11 +27,9 @@ ISS Passes
 The `International Space Station`_ has made a number of bright passes in the
 evening skies for the last few weeks.
 
-.. image:: https://live.staticflickr.com/65535/49731367072_0e9152e582_c.jpg
-    :width: 800
-    :height: 533
-    :scale: 100
-    :alt: ISS Pass 2020-04-01
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49840695827/in/dateposted-public/" title="ISS Pass 2020-04-01"><img src="https://live.staticflickr.com/65535/49840695827_74fb76f228_c.jpg" width="800" height="533" alt="ISS Pass 2020-04-01"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 *ISS pass with clouds and trees, taken 2020-04-01*
 |nbsp|
@@ -43,11 +41,9 @@ static mount, however a constellation can still be seen; `Orion`_ appears in the
 right hand half of the frame, complete with the very bright `Orion Nebula` (M42)
 making a fuzzy patch just above the electricity cables.
 
-.. image:: https://live.staticflickr.com/65535/49731055221_aefe9d9572_c.jpg
-    :width: 800
-    :height: 533
-    :scale: 100
-    :alt: ISS Pass 2020-03-26
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49840695902/in/dateposted-public/" title="ISS Pass 2020-03-26"><img src="https://live.staticflickr.com/65535/49840695902_db47f8a5e4_c.jpg" width="800" height="533" alt="ISS Pass 2020-03-26"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 *ISS passing through Taurus with the Pleiades (M45), taken 2020-03-26*
 |nbsp|
@@ -68,15 +64,11 @@ In March this year I purchased a well loved Samyang 135mm T2.2 lens which gives
 me a 9°24.00' by 6°16.50' view of the sky with the Canon EOS 450D. I decided
 that some moon shots would be a great way of giving it some first light.
 
-.. image:: https://live.staticflickr.com/65535/49731352767_137bd0786e_c.jpg
-    :width: 521
-    :height: 800
-    :scale: 100
-    :alt: Earthshine Moon taken on 2020-03-27 at 19:18:10 UT
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49840695922/in/dateposted-public/" title="Earthshine Moon taken on 2020-03-27 at 19:18:10 UT"><img src="https://live.staticflickr.com/65535/49840695922_d081381eb1_c.jpg" width="521" height="800" alt="Earthshine Moon taken on 2020-03-27 at 19:18:10 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 *Earthshine Moon taken on 2020-03-27 at 19:18:10 UT*
-
-
 
 .. raw:: html
 
@@ -96,6 +88,8 @@ Test
 
     <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49839857608/in/dateposted-public/" title="Moon, taken 2020-04-29 at 22:02"><img src="https://live.staticflickr.com/65535/49839857608_21659511b4_c.jpg" width="800" height="533" alt="Moon, taken 2020-04-29 at 22:02"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
+Phase 39% 6.3 days old
+
 Lyrid Meteor Shower
 +++++++++++++++++++
 
@@ -114,8 +108,8 @@ Night 1 - 2020-04-21
 ~~~~~~~~~~~~~~~~~~~~
 
 Below is a single exposure, taken from a set of test shots, 120 seconds exposure
-at ISO 800. Stacked using Deep Sky Stacker, polished up with Affinity Photo in
-black and white.
+at ISO 800. Stacked using `Deep Sky Stacker`_, polished up with
+`Affinity Photo`_ in black and white.
 
 .. raw:: html
 
@@ -130,6 +124,9 @@ post midnight peak - from 0000 to 0300.
 
 Night 2 - 2020-04-22
 ~~~~~~~~~~~~~~~~~~~~
+
+The next night was clear again, so another attempt was made at capturing
+meteorites.
 
 .. raw:: html
 
@@ -148,11 +145,15 @@ Yeah
 Star Trails
 +++++++++++
 
+Star trails!
+
 .. raw:: html
 
     <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49839858038/in/dateposted-public/" title="Back Garden Star Trails 2020-04-16"><img src="https://live.staticflickr.com/65535/49839858038_ccc3fb3e8d_c.jpg" width="800" height="533" alt="Back Garden Star Trails 2020-04-16"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 *Back Garden Star Trails 2020-04-16*
+
+And more here
 
 .. raw:: html
 
@@ -171,3 +172,5 @@ Star Trails
 .. _`Hyades`: https://en.wikipedia.org/wiki/Hyades_(star_cluster)
 .. _`Lyrid meteor shower`: https://en.wikipedia.org/wiki/Lyrids
 .. _`constellation of Lyra`: https://en.wikipedia.org/wiki/Lyra
+.. _`Deep Sky Stacker`: http://deepskystacker.free.fr/english/index.html
+.. _`Affinity Photo`: https://affinity.serif.com/en-gb/photo/

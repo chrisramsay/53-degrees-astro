@@ -60,11 +60,9 @@ flattener; it has to be 75 mm from a particular point on the flattener to the
 CCD chip surface, give or take a small amount to account for the refractive
 index of the filters.
 
-.. image:: https://live.staticflickr.com/65535/49733936051_21ebfacfbc_c.jpg
-   :width: 800
-   :height: 601
-   :scale: 100
-   :alt: Imaging train in real life
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49842248133/in/dateposted-public/" title="Back focus"><img src="https://live.staticflickr.com/65535/49842248133_b6e7cdc679_c.jpg" width="800" height="533" alt="Back focus"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 *Imaging train in real life*
 
@@ -79,14 +77,12 @@ thread and a male T-thread (42 mm) respectively, necessitating a custom made
 15 mm spacer beautifully engineered by John at `J-Tech Design`_.
 
 Once everything was together it was time to get drawing. Below is a plan of just
-the imaging train as above with the light path show with blue arrows. Not much
+the imaging train as above with the light path shown with blue arrows. Not much
 in itself, but it makes sense once it is part of the rest of the plan.
 
-.. image:: https://live.staticflickr.com/65535/49733170848_db10b2584c_z.jpg
-   :width: 800
-   :height: 577
-   :scale: 100
-   :alt: Block level imaging train plan
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49842860941/in/dateposted-public/" title="block-level-imaging-train_49733170848_o"><img src="https://live.staticflickr.com/65535/49842860941_748ee9cc21_c.jpg" width="800" height="577" alt="block-level-imaging-train_49733170848_o"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 *Block level imaging train plan*
 
@@ -103,11 +99,9 @@ both power distribution and USB connections. Once everything is laid out, it
 starts to become obvious where things are missing, such as: I need to think
 about getting a powered USB hub, or, do I have enough USB A to USB B leads?
 
-.. image:: https://live.staticflickr.com/65535/49733715706_a59272f456_c.jpg
-   :width: 800
-   :height: 560
-   :scale: 100
-   :alt: Block level physical connections
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49842317213/in/dateposted-public/" title="block-level-telescope_49730949866_o"><img src="https://live.staticflickr.com/65535/49842317213_acebaa6caa_c.jpg" width="800" height="635" alt="block-level-telescope_49730949866_o"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 *Block level physical connections*
 
@@ -129,11 +123,9 @@ will ideally need to find a hub that will run from a 12 V supply (and in a
 really ideal world, having a 5.5 x 2.1 centre positive power feed!) to try and
 keep the amount of adaptations down to a minimum.
 
-.. image:: https://live.staticflickr.com/65535/49733170253_b8c821283b_c.jpg
-   :width: 800
-   :height: 569
-   :scale: 100
-   :alt: Block level USB connections
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49842315963/in/dateposted-public/" title="block-level-usb_49733170253_o"><img src="https://live.staticflickr.com/65535/49842315963_e2496699d2_c.jpg" width="800" height="569" alt="block-level-usb_49733170253_o"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 *Block level USB connections*
 
@@ -166,11 +158,9 @@ with blade fuses and so on, others utilise "Anderson Power Pole" connectors as
 used by the Ham Radio community. This is something that definitely needs more
 thought.
 
-.. image:: https://live.staticflickr.com/65535/49734039312_c46bc7e2bb_c.jpg
-   :width: 800
-   :height: 564
-   :scale: 100
-   :alt: Block level USB connections
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49842317553/in/dateposted-public/" title="block-level-power_49734039312_o"><img src="https://live.staticflickr.com/65535/49842317553_d7c9fc9b13_c.jpg" width="800" height="564" alt="block-level-power_49734039312_o"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 *Block level power and network connections*
 
