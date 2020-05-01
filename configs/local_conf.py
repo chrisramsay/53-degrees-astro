@@ -63,6 +63,7 @@ MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/index.html'
 SOCIAL = (
     ('twitter', 'http://twitter.com/53_astro'),
     ('instagram', 'https://www.instagram.com/53degreesastro'),
+    ('flickr', 'https://www.flickr.com/people/chrisramsay'),
     )
 
 # Theme and plugins

@@ -123,11 +123,9 @@ Below is a single exposure, taken from a set of test shots, 120 seconds exposure
 at ISO 800. Stacked using Deep Sky Stacker, polished up with Affinity Photo in
 black and white.
 
-.. image:: https://live.staticflickr.com/65535/49816078286_18557e90e9_c.jpg
-    :width: 800
-    :height: 533
-    :scale: 100
-    :alt: Lyrid Meteor bursts in Leo, taken 2020-04-21 at 22:21:06 UT
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/chrisramsay/49816078286/in/album-72157713935614603/" title="Lyrid Meteor bursts in Leo, taken 2020-04-21 at 22:21:06 UT"><img src="https://live.staticflickr.com/65535/49816078286_18557e90e9_c.jpg" width="800" height="533" alt="Lyrid Meteor bursts in Leo, taken 2020-04-21 at 22:21:06 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 *Lyrid Meteor bursts in Leo, taken 2020-04-21 at 22:21:06 UT*
 
@@ -139,38 +137,30 @@ post midnight peak - from 0000 to 0300.
 Night 2 - 2020-04-22
 ~~~~~~~~~~~~~~~~~~~~
 
-.. image:: https://live.staticflickr.com/65535/49829090808_b02c6ec6b7_c.jpg
-    :width: 800
-    :height: 533
-    :scale: 100
-    :alt: Meteor in Coma Berenices during the Lyrids shower, taken 2020-04-22 at 23:07:19 UT
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/chrisramsay/49829090808/in/album-72157713935614603/" title="Meteor in Coma Berenices during the Lyrids shower, taken 2020-04-22 at 23:07:19 UT"><img src="https://live.staticflickr.com/65535/49829090808_b02c6ec6b7_c.jpg" width="800" height="533" alt="Meteor in Coma Berenices during the Lyrids shower, taken 2020-04-22 at 23:07:19 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 *Meteor in Coma Berenices during the Lyrids shower on 2020-04-22 at 23:07:19 UT*
 
 Yeah
 
-.. image:: https://live.staticflickr.com/65535/49837943338_d8b656e8c4_c.jpg
-    :width: 800
-    :height: 533
-    :scale: 100
-    :alt: Lyrid meteor in Ursa Major and Minor
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/chrisramsay/49837943338/in/album-72157713935614603/" title="Lyrid meteor in Ursa Major and Minor"><img src="https://live.staticflickr.com/65535/49837943338_d8b656e8c4_c.jpg" width="800" height="533" alt="Lyrid meteor in Ursa Major and Minor"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 Star Trails
 +++++++++++
 
-.. image:: https://live.staticflickr.com/65535/49787700052_1d75d528f4_c.jpg
-    :width: 800
-    :height: 533
-    :scale: 100
-    :alt: Back Garden Star Trails 2020-04-16
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/chrisramsay/49787700052/in/album-72157713935614603/" title="Back Garden Star Trails 2020-04-16"><img src="https://live.staticflickr.com/65535/49787700052_1d75d528f4_c.jpg" width="800" height="533" alt="Back Garden Star Trails 2020-04-16"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 *Back Garden Star Trails 2020-04-16*
 
-.. image:: https://live.staticflickr.com/65535/49816386582_e51fd855cb_c.jpg
-    :width: 800
-    :height: 533
-    :scale: 100
-    :alt: Looking for Lyrids 2020-04-20
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/chrisramsay/49816386582/in/album-72157713935614603/" title="Looking for Lyrids 2020-04-20"><img src="https://live.staticflickr.com/65535/49816386582_e51fd855cb_c.jpg" width="800" height="533" alt="Looking for Lyrids 2020-04-20"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 *Looking for Lyrids 2020-04-20*
 
