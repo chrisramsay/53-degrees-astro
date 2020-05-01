@@ -78,29 +78,23 @@ that some moon shots would be a great way of giving it some first light.
 
 
 
-.. image:: https://live.staticflickr.com/65535/49786841628_68706940a3_c.jpg
-    :width: 800
-    :height: 533
-    :scale: 100
-    :alt: Moonrise with Moody Clouds on 2020-04-08 at 21:23:46 UT
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49840396566/in/dateposted-public/" title="Pink Moon Rising with Moody Clouds on 2020-04-08 at 21:23:46 UT"><img src="https://live.staticflickr.com/65535/49840396566_a4d44a3107_c.jpg" width="800" height="533" alt="Pink Moon Rising with Moody Clouds on 2020-04-08 at 21:23:46 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 *Pink Moon Rising with Moody Clouds on 2020-04-08 at 21:23:46 UT*
 
 Phase 99% 15.7 days old
 
-.. image:: https://live.staticflickr.com/65535/49837890283_7e1afc5533_c.jpg
-    :width: 800
-    :height: 532
-    :scale: 100
-    :alt: Moon, taken 2020-04-25 at 20:57 UT
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49839857628/in/dateposted-public/" title="Moon, taken 2020-04-25 at 20:57 UT"><img src="https://live.staticflickr.com/65535/49839857628_7aa5e0ed8e_c.jpg" width="800" height="532" alt="Moon, taken 2020-04-25 at 20:57 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 Test
 
-.. image:: https://live.staticflickr.com/65535/49838721632_603deeb289_c.jpg
-    :width: 800
-    :height: 533
-    :scale: 100
-    :alt: Moon, taken 2020-04-29 at 22:02 UT
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49839857608/in/dateposted-public/" title="Moon, taken 2020-04-29 at 22:02"><img src="https://live.staticflickr.com/65535/49839857608_21659511b4_c.jpg" width="800" height="533" alt="Moon, taken 2020-04-29 at 22:02"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 Lyrid Meteor Shower
 +++++++++++++++++++
@@ -125,7 +119,7 @@ black and white.
 
 .. raw:: html
 
-    <a data-flickr-embed="true" href="https://www.flickr.com/photos/chrisramsay/49816078286/in/album-72157713935614603/" title="Lyrid Meteor bursts in Leo, taken 2020-04-21 at 22:21:06 UT"><img src="https://live.staticflickr.com/65535/49816078286_18557e90e9_c.jpg" width="800" height="533" alt="Lyrid Meteor bursts in Leo, taken 2020-04-21 at 22:21:06 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49840695722/in/dateposted-public/" title="Lyrid Meteor bursts in Leo, taken 2020-04-21 at 22:21:06 UT"><img src="https://live.staticflickr.com/65535/49840695722_b73200116d_c.jpg" width="800" height="533" alt="Lyrid Meteor bursts in Leo, taken 2020-04-21 at 22:21:06 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 *Lyrid Meteor bursts in Leo, taken 2020-04-21 at 22:21:06 UT*
 
@@ -139,7 +133,7 @@ Night 2 - 2020-04-22
 
 .. raw:: html
 
-    <a data-flickr-embed="true" href="https://www.flickr.com/photos/chrisramsay/49829090808/in/album-72157713935614603/" title="Meteor in Coma Berenices during the Lyrids shower, taken 2020-04-22 at 23:07:19 UT"><img src="https://live.staticflickr.com/65535/49829090808_b02c6ec6b7_c.jpg" width="800" height="533" alt="Meteor in Coma Berenices during the Lyrids shower, taken 2020-04-22 at 23:07:19 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49839857648/in/dateposted-public/" title="Meteor in Coma Berenices during the Lyrids shower, taken 2020-04-22 at 23:07:19 UT"><img src="https://live.staticflickr.com/65535/49839857648_82ec639fda_c.jpg" width="800" height="533" alt="Meteor in Coma Berenices during the Lyrids shower, taken 2020-04-22 at 23:07:19 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 *Meteor in Coma Berenices during the Lyrids shower on 2020-04-22 at 23:07:19 UT*
 
@@ -147,20 +141,22 @@ Yeah
 
 .. raw:: html
 
-    <a data-flickr-embed="true" href="https://www.flickr.com/photos/chrisramsay/49837943338/in/album-72157713935614603/" title="Lyrid meteor in Ursa Major and Minor"><img src="https://live.staticflickr.com/65535/49837943338_d8b656e8c4_c.jpg" width="800" height="533" alt="Lyrid meteor in Ursa Major and Minor"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49840695672/in/dateposted-public/" title="Lyrid meteor in Ursa Major and Minor"><img src="https://live.staticflickr.com/65535/49840695672_ec0974b0c9_c.jpg" width="800" height="533" alt="Lyrid meteor in Ursa Major and Minor"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+*Lyrid meteor in Ursa Major and Minor*
 
 Star Trails
 +++++++++++
 
 .. raw:: html
 
-    <a data-flickr-embed="true" href="https://www.flickr.com/photos/chrisramsay/49787700052/in/album-72157713935614603/" title="Back Garden Star Trails 2020-04-16"><img src="https://live.staticflickr.com/65535/49787700052_1d75d528f4_c.jpg" width="800" height="533" alt="Back Garden Star Trails 2020-04-16"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49839858038/in/dateposted-public/" title="Back Garden Star Trails 2020-04-16"><img src="https://live.staticflickr.com/65535/49839858038_ccc3fb3e8d_c.jpg" width="800" height="533" alt="Back Garden Star Trails 2020-04-16"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 *Back Garden Star Trails 2020-04-16*
 
 .. raw:: html
 
-    <a data-flickr-embed="true" href="https://www.flickr.com/photos/chrisramsay/49816386582/in/album-72157713935614603/" title="Looking for Lyrids 2020-04-20"><img src="https://live.staticflickr.com/65535/49816386582_e51fd855cb_c.jpg" width="800" height="533" alt="Looking for Lyrids 2020-04-20"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49839857808/in/dateposted-public/" title="Looking for Lyrids 2020-04-20"><img src="https://live.staticflickr.com/65535/49839857808_0235375b7c_c.jpg" width="800" height="533" alt="Looking for Lyrids 2020-04-20"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 *Looking for Lyrids 2020-04-20*
 
