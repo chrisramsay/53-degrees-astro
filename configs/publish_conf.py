@@ -3,8 +3,8 @@
 from __future__ import unicode_literals
 
 # Main
-AUTHOR = 'Chris Ramsay'
-SITENAME = '53-degrees-astro'
+AUTHOR = '53° Astro'
+SITENAME = '53° Astro'
 SITEURL = 'https://53-degrees-astro.com'
 PATH = 'content'
 TIMEZONE = 'Europe/Paris'
@@ -60,8 +60,11 @@ YEAR_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/index.html'
 
 # Social widget
-SOCIAL = (('twitter', 'http://twitter.com/53_astro'),
-          )
+SOCIAL = (
+    ('twitter', 'http://twitter.com/53_astro'),
+    ('instagram', 'https://www.instagram.com/53degreesastro'),
+    ('flickr', 'https://www.flickr.com/people/53-degrees-astro'),
+    )
 
 # Theme and plugins
 PLUGIN_PATHS = ['/plugins', ]

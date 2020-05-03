@@ -6,7 +6,7 @@ Equipment Setup Thoughts Part One
 :date: 2020-04-03
 :tags: astronomy, hardware, engineering
 :author: 53° Astro
-:status: Published
+:status: draft
 
 .. |nbsp| unicode:: 0xA0
   :trim:

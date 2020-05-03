@@ -107,8 +107,8 @@ angles on the sky.
 Night 1 - 2020-04-21
 ~~~~~~~~~~~~~~~~~~~~
 
-Below is a single exposure, taken from a set of test shots, 120 seconds exposure
-at ISO 800. Stacked using `Deep Sky Stacker`_, polished up with
+Below is a single exposure, taken from a series of test exposures, 120 seconds
+at ISO 800. Stacked using `Deep Sky Stacker`_, finished off using
 `Affinity Photo`_ in black and white.
 
 .. raw:: html
@@ -117,16 +117,26 @@ at ISO 800. Stacked using `Deep Sky Stacker`_, polished up with
 
 *Lyrid Meteor bursts in Leo, taken 2020-04-21 at 22:21:06 UT*
 
-I followed the above test shot with a set of exposures aimed at capturing the
-post midnight peak - from 0000 to 0300.
+The wide angle lens takes in the long track of the meteor rather well; the
+track stretches from the constellation of Boötes, right across Coma Berenices
+and into Leo where it finishes in a flash.
 
-100 files at 120s each.
+Happy with the tests, I set up for a series of exposures aimed at capturing the
+post midnight peak - starting from midnight to 0300. The session consisted of
+100 files at 120 seconds each when complete. Not a single frame had captured a
+meteor.
 
 Night 2 - 2020-04-22
 ~~~~~~~~~~~~~~~~~~~~
 
-The next night was clear again, so another attempt was made at capturing
-meteorites.
+The following night was clear again, so another attempt was made at capturing
+meteors. Once again the camera was set up with the fish eye lens, however this
+time I started a little earlier due to some incoming cloud later on in the
+night. The session ran a series of 102 exposures at ISO 800, 120 seconds each,
+from 2236 to 0236.
+
+This night proved to be moderately more successful with two meteors captured,
+both pretty small.
 
 .. raw:: html
 
@@ -134,7 +144,7 @@ meteorites.
 
 *Meteor in Coma Berenices during the Lyrids shower on 2020-04-22 at 23:07:19 UT*
 
-Yeah
+Th
 
 .. raw:: html
 
