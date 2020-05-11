@@ -132,8 +132,8 @@ Night 2 - 2020-04-22
 The following night was clear again, so another attempt was made at capturing
 meteors. Once again the camera was set up with the fish eye lens, however this
 time I started a little earlier due to some incoming cloud later on in the
-night. The session ran a series of 102 exposures at ISO 800, 120 seconds each,
-from 2236 to 0236.
+night. This nights' session ran a series of 102 exposures at ISO 800, 120
+seconds each, from 2236 to 0236 the following morning.
 
 This night proved to be moderately more successful with two meteors captured,
 both pretty small.
@@ -144,18 +144,33 @@ both pretty small.
 
 *Meteor in Coma Berenices during the Lyrids shower on 2020-04-22 at 23:07:19 UT*
 
-Th
+So you have to look quite hard to see this first one (picured above), just to
+the right of centre of the frame, making its way through the constellation of
+Coma Berenices.
 
 .. raw:: html
 
     <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49840695672/in/dateposted-public/" title="Lyrid meteor in Ursa Major and Minor"><img src="https://live.staticflickr.com/65535/49840695672_ec0974b0c9_c.jpg" width="800" height="533" alt="Lyrid meteor in Ursa Major and Minor"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
-*Lyrid meteor in Ursa Major and Minor*
+*Lyrid meteor in Ursa Major and Ursa Minor, 2020-04-23 at 00:25:10 UT*
+
+The second capture took place the other side of midnight, streaking a 26° long
+line between the stars of Alkaid (η UMa) and Kochab (β UMi). The image above has
+been cropped quite significantly and rendered as black and white from a colour
+exposure.
+
+That was it for the Lyrids this year; quiet and nowhere near as exciting as it
+could have been, but it does seem that most meteor hunters had a similar
+experience. Roll on the next meteor shower.
 
 Star Trails
 +++++++++++
 
-Star trails!
+Having recently got hold of a fish eye lens I thought that it would be
+interesting to leave the camera pointing at the sky, take a series of reasonably
+long exposures and stack them together to generate some star trails. Being that
+the stars move approximately 15° per hour, it made sense that even a short
+amount of exposure time would produce some decent star trails.
 
 .. raw:: html
 
@@ -163,7 +178,8 @@ Star trails!
 
 *Back Garden Star Trails 2020-04-16*
 
-And more here
+This first image comprises 30 exposures of 60 seconds each, at ISO 400, using
+the Canon DSLR with the F3.5/8 mm UMC Fish Eye lens.
 
 .. raw:: html
 

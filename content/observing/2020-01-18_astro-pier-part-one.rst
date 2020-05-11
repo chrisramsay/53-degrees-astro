@@ -125,10 +125,10 @@ in order to break out near the top.
 What's Next?
 ++++++++++++
 
-Next comes the building of the pier itself; the pipe, pier head with associated
-metalwork and the breakout box for the electrical and network connections. At
-this stage the weather has intervened, so everything is sitting waiting for the
-rain to pass.
+Next comes the building of the pier itself; the plastic pipe for the pier
+itself, pier head mount adapter with associated metalwork and the breakout box
+for the electrical and network connections. At this stage the weather has
+intervened, so everything is sitting waiting for the rain to pass.
 
-As ever, all outside projects are subject to the vagaries of the ever changeable
-British weather.
+As usual, all outside projects are subject to the vagaries of the rather
+changeable British weather.
