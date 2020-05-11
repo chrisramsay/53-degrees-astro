@@ -79,6 +79,12 @@ Use of sending power down 4 redundant lines in Ethernet.
 
 LED for power and activity - no, go for a simple acrylic light pipe arrangement.
 
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49881847736/in/dateposted-public/" title="astropi-dslr_closeup"><img src="https://live.staticflickr.com/65535/49881847736_18682eacf1_c.jpg" width="800" height="533" alt="astropi-dslr_closeup"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+*The control unit boxed up and tested*
+
 Testing
 +++++++
 
@@ -91,7 +97,16 @@ Network issues where the Pi won't connect. Aha, /boot/
 So it goes awry here when I start to connect all the bits. Low voltage causing
 the Pi to reset.
 
+Result
+++++++
 
+Here it is
+
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49881847716/in/dateposted-public/" title="astropi-dslr_outside-setup"><img src="https://live.staticflickr.com/65535/49881847716_3edb7ee208_c.jpg" width="533" height="800" alt="astropi-dslr_outside-setup"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+*Up and running in the garden*
 
 
 .. links
