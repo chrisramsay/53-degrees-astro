@@ -121,3 +121,14 @@ moment there is just a large hole ready for the concrete pour and a lintel where
 the base of the pier will fit. The conduit emerges near the base of the pier
 site and it will then turn 90° in an upwards direction, going up inside the pier
 in order to break out near the top.
+
+What's Next?
+++++++++++++
+
+Next comes the building of the pier itself; the pipe, pier head with associated
+metalwork and the breakout box for the electrical and network connections. At
+this stage the weather has intervened, so everything is sitting waiting for the
+rain to pass.
+
+As ever, all outside projects are subject to the vagaries of the ever changeable
+British weather.
