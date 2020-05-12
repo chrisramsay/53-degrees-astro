@@ -66,9 +66,12 @@ that some moon shots would be a great way of giving it some first light.
 
 .. raw:: html
 
-    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49840695922/in/dateposted-public/" title="Earthshine Moon taken on 2020-03-27 at 19:18:10 UT"><img src="https://live.staticflickr.com/65535/49840695922_d081381eb1_c.jpg" width="521" height="800" alt="Earthshine Moon taken on 2020-03-27 at 19:18:10 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49840695922/in/dateposted-public/" title="Earthshine Moon taken on 2020-03-27 at 19:18:10 UT"><img src="https://live.staticflickr.com/65535/49840695922_d081381eb1_c.jpg" width="521" height="800" alt="Earthlight Moon taken on 2020-03-27 at 19:18:10 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
-*Earthshine Moon taken on 2020-03-27 at 19:18:10 UT*
+*Earthlight Moon taken on 2020-03-27 at 19:18:10 UT*
+
+I quickly set up in the garden for the above picture of the moon with the express
+hope of capturing some `earthlight`_.
 
 .. raw:: html
 
@@ -135,8 +138,9 @@ time I started a little earlier due to some incoming cloud later on in the
 night. This nights' session ran a series of 102 exposures at ISO 800, 120
 seconds each, from 2236 to 0236 the following morning.
 
-This night proved to be moderately more successful with two meteors captured,
-both pretty small.
+This night proved to be moderately more successful with two meteors captured.
+neither were awe-inspiring, but I was happy with having at least something
+at the end of the session.
 
 .. raw:: html
 
@@ -156,8 +160,8 @@ Coma Berenices.
 
 The second capture took place the other side of midnight, streaking a 26° long
 line between the stars of Alkaid (η UMa) and Kochab (β UMi). The image above has
-been cropped quite significantly and rendered as black and white from a colour
-exposure.
+been cropped quite significantly and changed to black and white from a colour
+exposure using `Affinity Photo`_.
 
 That was it for the Lyrids this year; quiet and nowhere near as exciting as it
 could have been, but it does seem that most meteor hunters had a similar
@@ -170,7 +174,7 @@ Having recently got hold of a fish eye lens I thought that it would be
 interesting to leave the camera pointing at the sky, take a series of reasonably
 long exposures and stack them together to generate some star trails. Being that
 the stars move approximately 15° per hour, it made sense that even a short
-amount of exposure time would produce some decent star trails.
+amount of exposure time would produce some reasonable star trails.
 
 .. raw:: html
 
@@ -179,7 +183,7 @@ amount of exposure time would produce some decent star trails.
 *Back Garden Star Trails 2020-04-16*
 
 This first image comprises 30 exposures of 60 seconds each, at ISO 400, using
-the Canon DSLR with the F3.5/8 mm UMC Fish Eye lens.
+the Canon EOS 405D with the F3.5/8 mm UMC Fish Eye lens.
 
 .. raw:: html
 
@@ -187,6 +191,9 @@ the Canon DSLR with the F3.5/8 mm UMC Fish Eye lens.
 
 *Looking for Lyrids 2020-04-20*
 
+This second image is a composite of 120 exposures at 120 seconds each, ISO 800
+from one of my attempts to capture meteors during the Lyrid meteor shower. No
+meteors imaged, but a good set of star trails nevertheless.
 
 .. links
 
@@ -198,5 +205,6 @@ the Canon DSLR with the F3.5/8 mm UMC Fish Eye lens.
 .. _`Hyades`: https://en.wikipedia.org/wiki/Hyades_(star_cluster)
 .. _`Lyrid meteor shower`: https://en.wikipedia.org/wiki/Lyrids
 .. _`constellation of Lyra`: https://en.wikipedia.org/wiki/Lyra
+.. _`earthlight`: https://en.wikipedia.org/wiki/Earthlight_(astronomy)
 .. _`Deep Sky Stacker`: http://deepskystacker.free.fr/english/index.html
 .. _`Affinity Photo`: https://affinity.serif.com/en-gb/photo/
