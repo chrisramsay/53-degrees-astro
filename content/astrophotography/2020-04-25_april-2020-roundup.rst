@@ -27,19 +27,8 @@ ISS Passes
 The `International Space Station`_ has made a number of bright passes in the
 evening skies for the last few weeks.
 
-.. raw:: html
-
-    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49840695827/in/dateposted-public/" title="ISS Pass 2020-04-01"><img src="https://live.staticflickr.com/65535/49840695827_74fb76f228_c.jpg" width="800" height="533" alt="ISS Pass 2020-04-01"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-
-*ISS pass with clouds and trees, taken 2020-04-01*
-|nbsp|
-
-Low ISS pass taken 2020-04-01 at 20:36:38 UT on a (static) tracking mount. It is
-an 82 second exposure at f/3.5 with an astro-modified Canon EOS 450D and an
-EF50mm f1.8 II lens, at ISO 400. As can be seen the stars have trailed due the
-static mount, however a constellation can still be seen; `Orion`_ appears in the
-right hand half of the frame, complete with the very bright `Orion Nebula` (M42)
-making a fuzzy patch just above the electricity cables.
+Tracking Exposure 26th March 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. raw:: html
 
@@ -57,8 +46,31 @@ the constellation Taurus. The stars scattered in and around Aldebaran are known
 as the `Hyades`_, one of our closest open clusters, at approximately 153 ly
 distant.
 
+Static Exposure 1st April 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49840695827/in/dateposted-public/" title="ISS Pass 2020-04-01"><img src="https://live.staticflickr.com/65535/49840695827_74fb76f228_c.jpg" width="800" height="533" alt="ISS Pass 2020-04-01"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+*ISS pass with clouds and trees, taken 2020-04-01*
+|nbsp|
+
+Low ISS pass taken 2020-04-01 at 20:36:38 UT on a (static) tracking mount. It is
+an 82 second exposure at f/3.5 with an astro-modified Canon EOS 450D and an
+EF50mm f1.8 II lens, at ISO 400. As can be seen the stars have trailed due the
+static mount, however a constellation can still be seen; `Orion`_ appears in the
+right hand half of the frame, complete with the very bright `Orion Nebula` (M42)
+making a fuzzy patch just above the electricity cables.
+
 The Moon
 ++++++++
+
+With quite a few clear evenings in March and April this year, the moon has been
+a very prominent target.
+
+Earthlight 27th March 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In March this year I purchased a well loved Samyang 135mm T2.2 lens which gives
 me a 9°24.00' by 6°16.50' view of the sky with the Canon EOS 450D. I decided
@@ -73,13 +85,21 @@ that some moon shots would be a great way of giving it some first light.
 I quickly set up in the garden for the above picture of the moon with the express
 hope of capturing some `earthlight`_. Canon EOS 450D, ISO 400, 4 sec exposure, cropped
 
+Pink Moon 8th April 2020
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+135mm Lens (CHECK)
+
 .. raw:: html
 
     <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49840396566/in/dateposted-public/" title="Pink Moon Rising with Moody Clouds on 2020-04-08 at 20:23:46 UT"><img src="https://live.staticflickr.com/65535/49840396566_a4d44a3107_c.jpg" width="800" height="533" alt="Pink Moon Rising with Moody Clouds on 2020-04-08 at 20:23:46 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 *Pink Moon Rising with Moody Clouds on 2020-04-08 at 20:23:46 UT*
 
-Phase 99% 15.7 days old, Canon EOS 450D ISO 1600, 1/6 sec expossure
+Phase 99% 15.7 days old, Canon EOS 450D ISO 1600, 1/6 sec exposure
+
+New Moon 25th April 2020
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. raw:: html
 
@@ -89,13 +109,18 @@ Phase 99% 15.7 days old, Canon EOS 450D ISO 1600, 1/6 sec expossure
 
 Phase 3% 1.61 days old, Canon EOS 450D 50mm lens ISO 800 1/15 sec exposure, cropped.
 
+Waxing Moon 29th April 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Testing out the old 300 mm lens
+
 .. raw:: html
 
     <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49839857608/in/dateposted-public/" title="Moon, taken 2020-04-29 at 21:02:51 UT"><img src="https://live.staticflickr.com/65535/49839857608_21659511b4_c.jpg" width="800" height="533" alt="Moon, taken 2020-04-29 at 21:02:51 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 *Moon, taken 2020-04-29 at 21:02:51 UT*
 
-Phase 39% 6.3 days old, Canon EOS 550D 300mm lens at f/5.6 ISO 800 1/125 sec exposure, cropped.
+Phase 39% 6.3 days old, Canon EOS 550D 300 mm lens at f/5.6 ISO 800 1/125 sec exposure, cropped.
 
 Lyrid Meteor Shower
 +++++++++++++++++++
@@ -111,8 +136,8 @@ the Skywatcher Star Adventurer mount in order to track at Sidereal rate. Some
 test pictures were taken initially, mainly to test various exposures, times and
 angles on the sky.
 
-Night 1 - 2020-04-21
-~~~~~~~~~~~~~~~~~~~~
+Night 1 - 21st April 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Below is a single exposure, taken from a series of test exposures, 120 seconds
 at ISO 800. Stacked using `Deep Sky Stacker`_, finished off using
@@ -133,8 +158,8 @@ post midnight peak - starting from midnight to 0300. The session consisted of
 100 files at 120 seconds each when complete. Not a single frame had captured a
 meteor.
 
-Night 2 - 2020-04-22
-~~~~~~~~~~~~~~~~~~~~
+Night 2 - 22nd April 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The following night was clear again, so another attempt was made at capturing
 meteors. Once again the camera was set up with the fish eye lens, however this
@@ -148,9 +173,9 @@ at the end of the session.
 
 .. raw:: html
 
-    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49839857648/in/dateposted-public/" title="Meteor in Coma Berenices during the Lyrids shower, taken 2020-04-22 at 23:07:19 UT"><img src="https://live.staticflickr.com/65535/49839857648_82ec639fda_c.jpg" width="800" height="533" alt="Meteor in Coma Berenices during the Lyrids shower, taken 2020-04-22 at 23:07:19 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49839857648/in/dateposted-public/" title="Meteor in Coma Berenices during the Lyrids shower, taken 2020-04-22 at 22:07:19 UT"><img src="https://live.staticflickr.com/65535/49839857648_82ec639fda_c.jpg" width="800" height="533" alt="Meteor in Coma Berenices during the Lyrids shower, taken 2020-04-22 at 22:07:19 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
-*Meteor in Coma Berenices during the Lyrids shower on 2020-04-22 at 23:07:19 UT*
+*Meteor in Coma Berenices during the Lyrids shower, taken 2020-04-22 at 22:07:19 UT*
 
 So you have to look quite hard to see this first one (picured above), just to
 the right of centre of the frame, making its way through the constellation of
@@ -158,9 +183,9 @@ Coma Berenices.
 
 .. raw:: html
 
-    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49840695672/in/dateposted-public/" title="Lyrid meteor in Ursa Major and Minor"><img src="https://live.staticflickr.com/65535/49840695672_ec0974b0c9_c.jpg" width="800" height="533" alt="Lyrid meteor in Ursa Major and Minor"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49840695672/in/dateposted-public/" title="Lyrid meteor in Ursa Major and Minor 2020-04-23 at 00:22:33 UT"><img src="https://live.staticflickr.com/65535/49840695672_ec0974b0c9_c.jpg" width="800" height="533" alt="Lyrid meteor in Ursa Major and Minor 2020-04-23 at 00:22:33 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
-*Lyrid meteor in Ursa Major and Ursa Minor, 2020-04-23 at 00:25:10 UT*
+*Lyrid meteor in Ursa Major and Minor 2020-04-23 at 00:22:33 UT*
 
 The second capture took place the other side of midnight, streaking a 26° long
 line between the stars of Alkaid (η UMa) and Kochab (β UMi). The image above has
