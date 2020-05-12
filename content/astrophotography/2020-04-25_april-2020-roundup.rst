@@ -66,32 +66,36 @@ that some moon shots would be a great way of giving it some first light.
 
 .. raw:: html
 
-    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49840695922/in/dateposted-public/" title="Earthshine Moon taken on 2020-03-27 at 19:18:10 UT"><img src="https://live.staticflickr.com/65535/49840695922_d081381eb1_c.jpg" width="521" height="800" alt="Earthlight Moon taken on 2020-03-27 at 19:18:10 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49840695922/in/dateposted-public/" title="Earthlight Moon taken on 2020-03-27 at 18:18:10 UT"><img src="https://live.staticflickr.com/65535/49840695922_d081381eb1_c.jpg" width="521" height="800" alt="Earthlight Moon taken on 2020-03-27 at 18:18:10 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
-*Earthlight Moon taken on 2020-03-27 at 19:18:10 UT*
+*Earthlight Moon taken on 2020-03-27 at 18:18:10 UT*
 
 I quickly set up in the garden for the above picture of the moon with the express
-hope of capturing some `earthlight`_.
+hope of capturing some `earthlight`_. Canon EOS 450D, ISO 400, 4 sec exposure, cropped
 
 .. raw:: html
 
-    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49840396566/in/dateposted-public/" title="Pink Moon Rising with Moody Clouds on 2020-04-08 at 21:23:46 UT"><img src="https://live.staticflickr.com/65535/49840396566_a4d44a3107_c.jpg" width="800" height="533" alt="Pink Moon Rising with Moody Clouds on 2020-04-08 at 21:23:46 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49840396566/in/dateposted-public/" title="Pink Moon Rising with Moody Clouds on 2020-04-08 at 20:23:46 UT"><img src="https://live.staticflickr.com/65535/49840396566_a4d44a3107_c.jpg" width="800" height="533" alt="Pink Moon Rising with Moody Clouds on 2020-04-08 at 20:23:46 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
-*Pink Moon Rising with Moody Clouds on 2020-04-08 at 21:23:46 UT*
+*Pink Moon Rising with Moody Clouds on 2020-04-08 at 20:23:46 UT*
 
-Phase 99% 15.7 days old
-
-.. raw:: html
-
-    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49839857628/in/dateposted-public/" title="Moon, taken 2020-04-25 at 20:57 UT"><img src="https://live.staticflickr.com/65535/49839857628_7aa5e0ed8e_c.jpg" width="800" height="532" alt="Moon, taken 2020-04-25 at 20:57 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-
-Test
+Phase 99% 15.7 days old, Canon EOS 450D ISO 1600, 1/6 sec expossure
 
 .. raw:: html
 
-    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49839857608/in/dateposted-public/" title="Moon, taken 2020-04-29 at 22:02"><img src="https://live.staticflickr.com/65535/49839857608_21659511b4_c.jpg" width="800" height="533" alt="Moon, taken 2020-04-29 at 22:02"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49839857628/in/dateposted-public/" title="Moon, taken 2020-04-25 at 19:57:46 UT"><img src="https://live.staticflickr.com/65535/49839857628_7aa5e0ed8e_c.jpg" width="800" height="532" alt="Moon, taken 2020-04-25 at 19:57:46 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
-Phase 39% 6.3 days old
+*Moon, taken 2020-04-25 at 19:57:46 UT*
+
+Phase 3% 1.61 days old, Canon EOS 450D 50mm lens ISO 800 1/15 sec exposure, cropped.
+
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49839857608/in/dateposted-public/" title="Moon, taken 2020-04-29 at 21:02:51 UT"><img src="https://live.staticflickr.com/65535/49839857608_21659511b4_c.jpg" width="800" height="533" alt="Moon, taken 2020-04-29 at 21:02:51 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+*Moon, taken 2020-04-29 at 21:02:51 UT*
+
+Phase 39% 6.3 days old, Canon EOS 550D 300mm lens at f/5.6 ISO 800 1/125 sec exposure, cropped.
 
 Lyrid Meteor Shower
 +++++++++++++++++++
