@@ -1,0 +1,25 @@
+June 2020 Roundup
+------------------
+
+:title: June 2020 Roundup
+:slug: june-2020-roundup
+:date: 2020-04-25
+:tags: astronomy, photography, astrophotography
+:author: 53° Astro
+:status: Published
+
+.. |nbsp| unicode:: 0xA0
+  :trim:
+
+.. contents::
+
+.. PELICAN_BEGIN_SUMMARY
+
+So here begins the June 2020 roundup.
+
+.. PELICAN_END_SUMMARY
+
+Moon
+++++
+
+Waxing Gibbous Moon 2020-05-05 at 1928 UT
