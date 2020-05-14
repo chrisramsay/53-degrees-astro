@@ -8,6 +8,14 @@ Fun with the Sun and PyEphem
 :author: Chris Ramsay
 :status: Published
 
+.. raw:: html
+
+    <style>
+    table.dataframe td {
+        padding: 0px 5px 0px 5px;
+    }
+    </style>
+
 .. |nbsp| unicode:: 0xA0
   :trim:
 
