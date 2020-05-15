@@ -52,7 +52,7 @@ without wires or carrying cards about.
 Requirements
 ++++++++++++
 
-I decided that the the control box would have to be able to complete the
+I decided that the the control box would have to be able to fulfil the
 following requirements:
 
 - Provide power for the DSLR, lens warmer and Skywatcher mount
@@ -82,6 +82,12 @@ Construction
 The build took only a few hours once all the bits that I needed had arrived.
 Post being what it is at the moment (COVID-19 times) I had to wait a few weeks
 rather than a few days, but never mind... keeps one in suspense!
+
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49896351413/in/dateposted-public/" title="astropi-dslr Parts"><img src="https://live.staticflickr.com/65535/49896351413_bcb0845de7_c.jpg" width="800" height="533" alt="astropi-dslr Parts"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+*astrpi-dslr Parts*
 
 Power and Network on a Single Cable
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

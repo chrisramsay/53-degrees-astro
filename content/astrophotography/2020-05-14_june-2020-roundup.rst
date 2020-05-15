@@ -3,7 +3,7 @@ June 2020 Roundup
 
 :title: June 2020 Roundup
 :slug: june-2020-roundup
-:date: 2020-04-25
+:date: 2020-05-14
 :tags: astronomy, photography, astrophotography
 :author: 53° Astro
 :status: Published
@@ -22,10 +22,52 @@ So here begins the June 2020 roundup.
 Moon
 ++++
 
-Waxing Gibbous Moon 2020-05-05 at 1928 UT
+Almost Full Moon 5th May 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. raw:: html
 
     <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49896116848/in/dateposted-public/" title="Moon with Bird, taken 2020-05-05 at 19:28:56 UT"><img src="https://live.staticflickr.com/65535/49896116848_6564385374_c.jpg" width="800" height="533" alt="Moon with Bird, taken 2020-05-05 at 19:28:56 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 *Moon with Bird, taken 2020-05-05 at 19:28:56 UT*
+
+
+Canon EOS 550D with a Sigma 70-300mm lens at ƒ/14.0, 263.0 mm. Exposure 1/1600
+of a second, ISO 6400. Moon phase is 96.2%, Moon age is 12.9 days.
+
+Flower Moon 6th May 2020
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+The full Moon in the month of May is known, amongst other names, as the "Flower
+Moon".
+
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49896360793/in/dateposted-public/" title="Flower Moon and telescope, taken 2020-05-06 20:48:00 UT"><img src="https://live.staticflickr.com/65535/49896360793_c1061e9d7c_c.jpg" width="800" height="533" alt="Flower Moon and telescope, taken 2020-05-06 20:48:00 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+*Flower Moon and telescope, taken 2020-05-06 20:48:00 UT*
+
+Canon EOS 550D with a 19-35mm lens at ƒ/11.0, 32.0 mm. Exposure 30 seconds at
+ISO 200. Moon phase is 99.4%, Moon age is 14.1 days.
+
+Star Trails
++++++++++++
+
+Here is the first light output from the `Raspberry Pi powered DSLR controller`_
+I began building back at the beginning of May 2020.
+
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49896352393/in/dateposted-public/" title="Testing the new astropi-DSLR - Star Trails 2020-05-13"><img src="https://live.staticflickr.com/65535/49896352393_53eceb2b91_c.jpg" width="800" height="533" alt="Testing the new astropi-DSLR - Star Trails 2020-05-13"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+*Testing the new astropi-DSLR - Star Trails 2020-05-13*
+
+The star trails above were captured in a single session starting at 22:35:32 UT
+with the last frame shot at 00:57:47 UT. This is a total of 70 exposures, 120
+secs each at ISO 800. Total integration time of 140 minutes (2 hours 20 minutes
+.)
+
+.. links
+
+.. _`Raspberry Pi powered DSLR controller`: {filename}/observing/2020-05-10_building-a-raspberry-pi-flavoured-dslr-control-unit.rst
+.. _`d`: https://en.wikipedia.org/wiki/Full_moon#Full_moon_names

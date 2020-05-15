@@ -37,7 +37,7 @@ Tracking Exposure 26th March 2020
 *ISS passing through Taurus with the Pleiades (M45), taken 2020-03-26*
 |nbsp|
 
-This is a 90 second exposure at f/3.5 with an astro-modified EOS 450D and a
+This is a 90 second exposure at ƒ/3.5 with an astro-modified EOS 450D and a
 EF50mm f1.8 II lens, at ISO 800 with a polar aligned mount tracking at Sidereal
 rate. In the top right corner of the frame is the `Pleiades open star cluster`_
 (M45), also known as the Seven Sisters. The path of the ISS itself goes just to
@@ -57,7 +57,7 @@ Static Exposure 1st April 2020
 |nbsp|
 
 Low ISS pass taken 2020-04-01 at 20:36:38 UT on a (static) tracking mount. It is
-an 82 second exposure at f/3.5 with an astro-modified Canon EOS 450D and an
+an 82 second exposure at ƒ/3.5 with an astro-modified Canon EOS 450D and an
 EF50mm f1.8 II lens, at ISO 400. As can be seen the stars have trailed due the
 static mount, however a constellation can still be seen; `Orion`_ appears in the
 right hand half of the frame, complete with the very bright `Orion Nebula` (M42)
@@ -116,7 +116,7 @@ the 25th April.
 
 *Moon, taken 2020-04-25 at 19:57:46 UT*
 
-Taken using the Canon EOS 450D and the EF 50mm f/1.8 II lens, 1/15 sec exposure
+Taken using the Canon EOS 450D and the EF 50mm ƒ/1.8 II lens, 1/15 sec exposure
 at ISO 800. Moon phase is 3%, Moon age is 1.61 days. Cropped and played about
 with a bit in `Affinity Photo`_.
 
