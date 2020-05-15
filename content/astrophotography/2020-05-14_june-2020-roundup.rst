@@ -23,3 +23,9 @@ Moon
 ++++
 
 Waxing Gibbous Moon 2020-05-05 at 1928 UT
+
+.. raw::html
+
+  <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49896116848/in/dateposted-public/" title="Moon with Bird, taken 2020-05-05 at 19:28:56 UT"><img src="https://live.staticflickr.com/65535/49896116848_6564385374_c.jpg" width="800" height="533" alt="Moon with Bird, taken 2020-05-05 at 19:28:56 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+*Moon with Bird, taken 2020-05-05 at 19:28:56 UT*
