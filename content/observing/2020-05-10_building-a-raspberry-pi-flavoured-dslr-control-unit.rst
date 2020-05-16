@@ -52,8 +52,8 @@ without wires or carrying cards about.
 Requirements
 ++++++++++++
 
-I decided that the the control box would have to be able to fulfil the
-following requirements:
+I decided that the control box would have to be able to fulfil the following
+requirements:
 
 - Provide power for the DSLR, lens warmer and Skywatcher mount
 - Download image data from the DSLR to local storage
@@ -76,18 +76,38 @@ purchased to start the project, namely:
   pairs)
 - 5 V 40mm cooling fan
 
+So with a some time to spare, I hit a well known auction site and did some
+shopping with the exception of the Raspberry Pi which came from my usual
+supplier `RS online`_.
+
+Plan
+++++
+
+The overall idea for the box is that it is supplied power via a 12 V DC and has
+the ability to be connected to my local network via Ethernet. Why not WiFi, you
+might ask? I have never had really trouble-free operation with discrete devices
+running on WiFi; in other words, once they become unresponsive for some reason
+one ends up having to walk to where they are and plug them in. Being wired in
+just eliminates a frequent source of problems as far as I am concerned.
+
+An ethernet connection and a 12 V supply can be achieved over a single cable as
+`shown further down`_.
+
 Construction
 ++++++++++++
 
 The build took only a few hours once all the bits that I needed had arrived.
 Post being what it is at the moment (COVID-19 times) I had to wait a few weeks
-rather than a few days, but never mind... keeps one in suspense!
+rather than a few days, but never mind... keeps one in suspense! The Raspberry
+Pi and USB power supply
 
 .. raw:: html
 
     <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49896351413/in/dateposted-public/" title="astropi-dslr Parts"><img src="https://live.staticflickr.com/65535/49896351413_bcb0845de7_c.jpg" width="800" height="533" alt="astropi-dslr Parts"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 *astrpi-dslr Parts*
+
+.. _`shown further down`:
 
 Power and Network on a Single Cable
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -213,3 +233,4 @@ Test
 .. _`KStars`: https://edu.kde.org/kstars/
 .. _`EKOS`:  https://www.indilib.org/about/ekos.html
 .. _`INDI`: https://indilib.org/
+.. _`RS online`: https://uk.rs-online.com

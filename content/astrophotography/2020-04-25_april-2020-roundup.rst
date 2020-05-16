@@ -162,13 +162,13 @@ Night 1 - 20th April 2020
 
 I set the camera running at 23:05 UT with a planned sequence of 100 exposures,
 120 seconds each at ISO 800. Unfortunately I had accidentally set the aperture
-to F/22 whilst setting up in the dark. Not much was captured this night as a
+to ƒ/22 whilst setting up in the dark. Not much was captured this night as a
 result.
 
 Night 2 - 21st April 2020
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This night, I made sure that the lens aperture was set correctly at F/3.5!
+This night, I made sure that the lens aperture was set correctly at ƒ/3.5!
 
 Below is a single exposure, taken from a series of test exposures, 120 seconds
 at ISO 800. Stacked using `Deep Sky Stacker`_, finished off using
