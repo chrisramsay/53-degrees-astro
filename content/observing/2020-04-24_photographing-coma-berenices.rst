@@ -15,3 +15,7 @@ Photographing Coma Berenices
 
 Photographing Coma Berenices
 ++++++++++++++++++++++++++++
+
+Since I became interested in Astronomy, one of the constellations that I have
+found most fascinating is one of the more unassuming ones of the 88 that are
+named in modern astronomy.
