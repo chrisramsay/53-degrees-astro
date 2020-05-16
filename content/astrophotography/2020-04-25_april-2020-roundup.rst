@@ -27,19 +27,8 @@ ISS Passes
 The `International Space Station`_ has made a number of bright passes in the
 evening skies for the last few weeks.
 
-.. raw:: html
-
-    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49840695827/in/dateposted-public/" title="ISS Pass 2020-04-01"><img src="https://live.staticflickr.com/65535/49840695827_74fb76f228_c.jpg" width="800" height="533" alt="ISS Pass 2020-04-01"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-
-*ISS pass with clouds and trees, taken 2020-04-01*
-|nbsp|
-
-Low ISS pass taken 2020-04-01 at 20:36:38 UT on a (static) tracking mount. It is
-an 82 second exposure at f/3.5 with an astro-modified Canon EOS 450D and an
-EF50mm f1.8 II lens, at ISO 400. As can be seen the stars have trailed due the
-static mount, however a constellation can still be seen; `Orion`_ appears in the
-right hand half of the frame, complete with the very bright `Orion Nebula` (M42)
-making a fuzzy patch just above the electricity cables.
+Tracking Exposure 26th March 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. raw:: html
 
@@ -48,7 +37,7 @@ making a fuzzy patch just above the electricity cables.
 *ISS passing through Taurus with the Pleiades (M45), taken 2020-03-26*
 |nbsp|
 
-This is a 90 second exposure at f/3.5 with an astro-modified EOS 450D and a
+This is a 90 second exposure at ƒ/3.5 with an astro-modified EOS 450D and a
 EF50mm f1.8 II lens, at ISO 800 with a polar aligned mount tracking at Sidereal
 rate. In the top right corner of the frame is the `Pleiades open star cluster`_
 (M45), also known as the Seven Sisters. The path of the ISS itself goes just to
@@ -57,38 +46,95 @@ the constellation Taurus. The stars scattered in and around Aldebaran are known
 as the `Hyades`_, one of our closest open clusters, at approximately 153 ly
 distant.
 
+Static Exposure 1st April 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49840695827/in/dateposted-public/" title="ISS Pass 2020-04-01"><img src="https://live.staticflickr.com/65535/49840695827_74fb76f228_c.jpg" width="800" height="533" alt="ISS Pass 2020-04-01"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+*ISS pass with clouds and trees, taken 2020-04-01*
+|nbsp|
+
+Low ISS pass taken 2020-04-01 at 20:36:38 UT on a (static) tracking mount. It is
+an 82 second exposure at ƒ/3.5 with an astro-modified Canon EOS 450D and an
+EF50mm f1.8 II lens, at ISO 400. As can be seen the stars have trailed due the
+static mount, however a constellation can still be seen; `Orion`_ appears in the
+right hand half of the frame, complete with the very bright `Orion Nebula` (M42)
+making a fuzzy patch just above the electricity cables.
+
 The Moon
 ++++++++
 
+With quite a few clear evenings in March and April this year, the Moon has been
+a very prominent target.
+
+Earthlight 27th March 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 In March this year I purchased a well loved Samyang 135mm T2.2 lens which gives
 me a 9°24.00' by 6°16.50' view of the sky with the Canon EOS 450D. I decided
-that some moon shots would be a great way of giving it some first light.
+that some Moon shots would be a great way of giving it some first light.
 
 .. raw:: html
 
-    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49840695922/in/dateposted-public/" title="Earthshine Moon taken on 2020-03-27 at 19:18:10 UT"><img src="https://live.staticflickr.com/65535/49840695922_d081381eb1_c.jpg" width="521" height="800" alt="Earthshine Moon taken on 2020-03-27 at 19:18:10 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49840695922/in/dateposted-public/" title="Earthlight Moon taken on 2020-03-27 at 18:18:10 UT"><img src="https://live.staticflickr.com/65535/49840695922_d081381eb1_c.jpg" width="521" height="800" alt="Earthlight Moon taken on 2020-03-27 at 18:18:10 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
-*Earthshine Moon taken on 2020-03-27 at 19:18:10 UT*
+*Earthlight Moon taken on 2020-03-27 at 18:18:10 UT*
 
-.. raw:: html
+I quickly set up in the garden for the above picture of the Moon with the express
+hope of capturing some `earthlight`_. Picture taken with the Canon EOS 450D on a
+tripod; a 4 second exposure at ISO 400. Cropped and played about with a bit in
+`Affinity Photo`_.
 
-    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49840396566/in/dateposted-public/" title="Pink Moon Rising with Moody Clouds on 2020-04-08 at 21:23:46 UT"><img src="https://live.staticflickr.com/65535/49840396566_a4d44a3107_c.jpg" width="800" height="533" alt="Pink Moon Rising with Moody Clouds on 2020-04-08 at 21:23:46 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+Pink Moon 8th April 2020
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Pink Moon Rising with Moody Clouds on 2020-04-08 at 21:23:46 UT*
-
-Phase 99% 15.7 days old
-
-.. raw:: html
-
-    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49839857628/in/dateposted-public/" title="Moon, taken 2020-04-25 at 20:57 UT"><img src="https://live.staticflickr.com/65535/49839857628_7aa5e0ed8e_c.jpg" width="800" height="532" alt="Moon, taken 2020-04-25 at 20:57 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-
-Test
+The full Moon in April was known as the "Pink Moon" and was also a "supermoon"
+due to its *ever so slightly* larger appearance; a result of the Moon reaching
+perigee in its orbit of Earth.
 
 .. raw:: html
 
-    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49839857608/in/dateposted-public/" title="Moon, taken 2020-04-29 at 22:02"><img src="https://live.staticflickr.com/65535/49839857608_21659511b4_c.jpg" width="800" height="533" alt="Moon, taken 2020-04-29 at 22:02"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49840396566/in/dateposted-public/" title="Pink Moon Rising with Moody Clouds on 2020-04-08 at 20:23:46 UT"><img src="https://live.staticflickr.com/65535/49840396566_a4d44a3107_c.jpg" width="800" height="533" alt="Pink Moon Rising with Moody Clouds on 2020-04-08 at 20:23:46 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
-Phase 39% 6.3 days old
+*Pink Moon Rising with Moody Clouds on 2020-04-08 at 20:23:46 UT*
+
+The picture above was taken with the Canon EOS 450D and the Samyang 135mm T2.2
+lens; a 1/6 second exposure at ISO 1600. Moon phase is 99%, Moon age is 15.7
+days.
+
+Young Moon 25th April 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Nipped outside to take a chance picture of a rather young Moon on the evening of
+the 25th April.
+
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49839857628/in/dateposted-public/" title="Moon, taken 2020-04-25 at 19:57:46 UT"><img src="https://live.staticflickr.com/65535/49839857628_7aa5e0ed8e_c.jpg" width="800" height="532" alt="Moon, taken 2020-04-25 at 19:57:46 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+*Moon, taken 2020-04-25 at 19:57:46 UT*
+
+Taken using the Canon EOS 450D and the EF 50mm ƒ/1.8 II lens, 1/15 sec exposure
+at ISO 800. Moon phase is 3%, Moon age is 1.61 days. Cropped and played about
+with a bit in `Affinity Photo`_.
+
+Waxing Moon 29th April 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+As luck would have it I inherited an old Canon EOS 550D with a Sigma 70-300 mm
+lens. Below is a first light attempt with the Moon.
+
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49839857608/in/dateposted-public/" title="Moon, taken 2020-04-29 at 21:02:51 UT"><img src="https://live.staticflickr.com/65535/49839857608_21659511b4_c.jpg" width="800" height="533" alt="Moon, taken 2020-04-29 at 21:02:51 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+*Moon, taken 2020-04-29 at 21:02:51 UT*
+
+Above we can see the Moon waxing towards half with a 1/125 second exposure at
+ISO 800. Moon phase is 39%, Moon age is 6.3 days. Cropped and played about with
+a bit in `Affinity Photo`_.
 
 Lyrid Meteor Shower
 +++++++++++++++++++
@@ -98,14 +144,31 @@ annual `Lyrid meteor shower`_; capturing a meteor is something I have never
 tried before. The obvious solution seemed to be to aim a camera at or around
 the radiant area in the sky around the `constellation of Lyra`_.
 
-It was time to bring out the F3.5/8 mm UMC Fish Eye lens and have a few hours
-under the stars. I decided to put the camera (Canon 450D astro-modified) onto
-the Skywatcher Star Adventurer mount in order to track at Sidereal rate. Some
-test pictures were taken initially, mainly to test various exposures, times and
-angles on the sky.
+The Lyrids are visible from around 16th April to the 26th April, peaking
+typically on the night of the 22nd April.
 
-Night 1 - 2020-04-21
-~~~~~~~~~~~~~~~~~~~~
+In order to have the best chance of getting a meteor I figured that seeing as
+much of the sky as possible would be sensible. So it was time to bring out the
+F3.5/8 mm UMC Fish Eye lens and have a few hours under the stars. I decided to
+put the camera (Canon 450D astro-modified) onto the Skywatcher Star Adventurer
+mount in order to track at Sidereal rate. Some test pictures were taken
+initially, mainly to test various exposures, times and angles on the sky.
+
+For all three nights the camera was controlled using a laptop running a piece of
+software called `Astrophotography Tool`_.
+
+Night 1 - 20th April 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+I set the camera running at 23:05 UT with a planned sequence of 100 exposures,
+120 seconds each at ISO 800. Unfortunately I had accidentally set the aperture
+to F/22 whilst setting up in the dark. Not much was captured this night as a
+result.
+
+Night 2 - 21st April 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This night, I made sure that the lens aperture was set correctly at F/3.5!
 
 Below is a single exposure, taken from a series of test exposures, 120 seconds
 at ISO 800. Stacked using `Deep Sky Stacker`_, finished off using
@@ -113,49 +176,65 @@ at ISO 800. Stacked using `Deep Sky Stacker`_, finished off using
 
 .. raw:: html
 
-    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49840695722/in/dateposted-public/" title="Lyrid Meteor bursts in Leo, taken 2020-04-21 at 22:21:06 UT"><img src="https://live.staticflickr.com/65535/49840695722_b73200116d_c.jpg" width="800" height="533" alt="Lyrid Meteor bursts in Leo, taken 2020-04-21 at 22:21:06 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49840695722/in/dateposted-public/" title="Lyrid Meteor bursts in Leo, taken 2020-04-21 at 21:21:06 UT"><img src="https://live.staticflickr.com/65535/49840695722_b73200116d_c.jpg" width="800" height="533" alt="Lyrid Meteor bursts in Leo, taken 2020-04-21 at 21:21:06 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
-*Lyrid Meteor bursts in Leo, taken 2020-04-21 at 22:21:06 UT*
+*Lyrid Meteor bursts in Leo, taken 2020-04-21 at 21:21:06 UT*
 
 The wide angle lens takes in the long track of the meteor rather well; the
 track stretches from the constellation of Boötes, right across Coma Berenices
 and into Leo where it finishes in a flash.
 
 Happy with the tests, I set up for a series of exposures aimed at capturing the
-post midnight peak - starting from midnight to 0300. The session consisted of
-100 files at 120 seconds each when complete. Not a single frame had captured a
-meteor.
+post midnight peak - starting at 23:04 UT and running until 03:20 UT. The
+sequence consisted of 102 files, 150 seconds each at ISO 800 when complete.
+Not a single frame had captured a meteor.
 
-Night 2 - 2020-04-22
-~~~~~~~~~~~~~~~~~~~~
+Night 3 - 22nd April 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The following night was clear again, so another attempt was made at capturing
-meteors. Once again the camera was set up with the fish eye lens, however this
-time I started a little earlier due to some incoming cloud later on in the
-night. The session ran a series of 102 exposures at ISO 800, 120 seconds each,
-from 2236 to 0236.
+My luck was in; a third clear night in a row! Once again the camera was set up
+with the fish eye lens, however this time I started a little earlier due to some
+incoming cloud later on in the night. This nights' sequence planned in a series
+of 101 exposures, 152 seconds each at ISO 800 from 21:26 UT to 01:41 UT the
+following morning.
 
-This night proved to be moderately more successful with two meteors captured,
-both pretty small.
-
-.. raw:: html
-
-    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49839857648/in/dateposted-public/" title="Meteor in Coma Berenices during the Lyrids shower, taken 2020-04-22 at 23:07:19 UT"><img src="https://live.staticflickr.com/65535/49839857648_82ec639fda_c.jpg" width="800" height="533" alt="Meteor in Coma Berenices during the Lyrids shower, taken 2020-04-22 at 23:07:19 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-
-*Meteor in Coma Berenices during the Lyrids shower on 2020-04-22 at 23:07:19 UT*
-
-Th
+This night proved to be moderately more successful with two meteors captured.
+neither were awe-inspiring, but I was happy with having at least something
+at the end of the session.
 
 .. raw:: html
 
-    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49840695672/in/dateposted-public/" title="Lyrid meteor in Ursa Major and Minor"><img src="https://live.staticflickr.com/65535/49840695672_ec0974b0c9_c.jpg" width="800" height="533" alt="Lyrid meteor in Ursa Major and Minor"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49839857648/in/dateposted-public/" title="Meteor in Coma Berenices during the Lyrids shower, taken 2020-04-22 at 22:07:19 UT"><img src="https://live.staticflickr.com/65535/49839857648_82ec639fda_c.jpg" width="800" height="533" alt="Meteor in Coma Berenices during the Lyrids shower, taken 2020-04-22 at 22:07:19 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
-*Lyrid meteor in Ursa Major and Minor*
+*Meteor in Coma Berenices during the Lyrids shower, taken 2020-04-22 at 22:07:19 UT*
+
+So you have to look quite hard to see this first one (picured above), just to
+the right of centre of the frame, making its way through the constellation of
+Coma Berenices.
+
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49840695672/in/dateposted-public/" title="Lyrid meteor in Ursa Major and Minor 2020-04-23 at 00:22:33 UT"><img src="https://live.staticflickr.com/65535/49840695672_ec0974b0c9_c.jpg" width="800" height="533" alt="Lyrid meteor in Ursa Major and Minor 2020-04-23 at 00:22:33 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+*Lyrid meteor in Ursa Major and Minor 2020-04-23 at 00:22:33 UT*
+
+The second capture took place the other side of midnight, streaking a 26° long
+line between the stars of Alkaid (η UMa) and Kochab (β UMi). The image above has
+been cropped quite significantly and changed to black and white from a colour
+exposure using `Affinity Photo`_.
+
+That was it for the Lyrids this year; quiet and nowhere near as exciting as it
+could have been, but it does seem that most meteor hunters had a similar
+experience. Roll on the next meteor shower.
 
 Star Trails
 +++++++++++
 
-Star trails!
+Having recently got hold of a fish eye lens I thought that it would be
+interesting to leave the camera pointing at the sky, take a series of reasonably
+long exposures and stack them together to generate some star trails. Being that
+the stars move approximately 15° per hour, it made sense that even a short
+amount of exposure time would produce some reasonable star trails.
 
 .. raw:: html
 
@@ -163,7 +242,8 @@ Star trails!
 
 *Back Garden Star Trails 2020-04-16*
 
-And more here
+This first image comprises 30 exposures of 60 seconds each, at ISO 400, using
+the Canon EOS 405D with the F3.5/8 mm UMC Fish Eye lens.
 
 .. raw:: html
 
@@ -171,6 +251,10 @@ And more here
 
 *Looking for Lyrids 2020-04-20*
 
+This second image is a composite from a sequence of 102 exposures at 150 seconds
+each, ISO 800 from one of my attempts to capture meteors during the Lyrid meteor
+shower. Again these were taken with the Canon EOS 405D and F3.5/8 mm UMC Fish
+Eye lens No meteors imaged, but a good set of star trails nevertheless.
 
 .. links
 
@@ -182,5 +266,7 @@ And more here
 .. _`Hyades`: https://en.wikipedia.org/wiki/Hyades_(star_cluster)
 .. _`Lyrid meteor shower`: https://en.wikipedia.org/wiki/Lyrids
 .. _`constellation of Lyra`: https://en.wikipedia.org/wiki/Lyra
+.. _`earthlight`: https://en.wikipedia.org/wiki/Earthlight_(astronomy)
 .. _`Deep Sky Stacker`: http://deepskystacker.free.fr/english/index.html
 .. _`Affinity Photo`: https://affinity.serif.com/en-gb/photo/
+.. _`Astrophotography Tool`: https://astrophotography.app/

@@ -6,7 +6,7 @@ Equipment Setup Thoughts Part One
 :date: 2020-04-03
 :tags: astronomy, hardware, engineering
 :author: 53° Astro
-:status: draft
+:status: Published
 
 .. |nbsp| unicode:: 0xA0
   :trim:
@@ -168,6 +168,9 @@ Some thought needs to be put towards handling dew that will no doubt build up on
 the objective lens on the telescope. Currently, I have a home built dew
 prevention system that requires a 12 volt supply (not a problem then) but it is
 very bulky; finding some space to mount it might be quite tricky.
+
+Next?
+~~~~~
 
 The gold standard (perfect) solution for all this would be a combined USB hub
 and 12 V power supply complete with a dew heater controller system. I wonder if
