@@ -57,8 +57,8 @@ requirements:
 
 - Provide power for the DSLR, lens warmer and Skywatcher mount
 - Download image data from the DSLR to local storage
-- Be able to send data over my local network (WiFi or ethernet) via a shared
-  drive or something similar
+- Be able to send and receive data over my local network (WiFi or ethernet) for
+  remote desktop control and downloading images
 - Be powered from a 12 V power supply
 - Perform the above tasks reliably and ideally in a single, and reasonably
   weather-proof package
@@ -69,21 +69,29 @@ Plan
 The overall idea for the box is that it is supplied power via a 12 V DC and has
 the ability to be connected to my local network via Ethernet. Why not WiFi, you
 might ask? I have never had really trouble-free operation with discrete devices
-running on WiFi; in other words, once they become unresponsive for some reason
-one ends up having to walk to where they are and plug them in. Having a wired
-connection just eliminates a frequent source of problems as far as I am
+running on WiFi; in other words, once they become unresponsive for some reason,
+one ends up having to walk to where they are and plug them in anyway. Having a
+wired connection just eliminates a frequent source of problems as far as I am
 concerned.
 
-Surprisingly, perhaps, ethernet connection and a 12 V supply can be achieved
+Surprisingly, perhaps, an ethernet connection and a 12 V supply can be achieved
 over a single CAT5 cable; read on at `Power and Network on a Single Cable`_ for
-seeing how that's possible. There are several sets of different power
-requirements, thankfully all of which can be achieved using USB 5 V power
+seeing how that's possible. The peripherals have a couple of different power
+requirements, thankfully all of which can be supplied using USB 5 V power
 distribution:
 
 - Canon EOS 450D requires 7.1 V, achievable via a USB powered battery insert
-- Lens warmer which is also USB powered
-- Raspberry Pi, powered via a USB C connector
-- Skywatcher mount, powered via a mini USB connector 
+- Lens warmer required 5 V but has a USB connector
+- Raspberry Pi, 5 V powered via a USB C input
+- Skywatcher mount, 5 V powered via a mini USB input
+
+I had a search for something that would be capable of taking a 12 V input and
+stepping it down to 5 V with USB ports (not data, just power). Turns out, such
+a thing exists in the form of a 4 port USB power supply, I think for the
+automotive market - *12V To 5V 5A Step Down 4 Port USB DC Power Supply Module
+Mobile Tablets Charger* as it was titled on eBay. Just make sure that if you do
+get one of these, always be sceptical regarding the current rating. It may well
+not be capable of having 5 A drawn from it!
 
 With the above in mind I built up a list of things that would have to be
 purchased to start the project, namely:
