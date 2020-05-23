@@ -31,7 +31,6 @@ Almost Full Moon 5th May 2020
 
 *Moon with Bird, taken 2020-05-05 at 19:28:56 UT*
 
-
 Canon EOS 550D with a Sigma 70-300mm lens at ƒ/14.0, 263.0 mm. Exposure 1/1600
 of a second, ISO 6400. Moon phase is 96.2%, Moon age is 12.9 days.
 
@@ -67,7 +66,50 @@ with the last frame shot at 00:57:47 UT. This is a total of 70 exposures, 120
 secs each at ISO 800. Total integration time of 140 minutes (2 hours 20 minutes
 .)
 
+ISS and Associated Passes
++++++++++++++++++++++++++
+
+The `International Space Station`_ has made a number of bright passes in the
+evening skies of May.
+
+Static Exposure of ISS Pass #1 22nd May 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49925220686/in/dateposted-public/" title="ISS Pass #1 2020-05-22"><img src="https://live.staticflickr.com/65535/49925220686_2db1ed615c_c.jpg" width="800" height="533" alt="ISS Pass #1 2020-05-22"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+*ISS Pass #1 2020-05-22*
+
+ISS Pass in 24 frames, 10 seconds each, taken 2020-05-22 from 21:07:23 UT to 21:12:48 UT. Canon EOS 450D with 8mm Fisheye lens at ISO 100
+
+Static Exposure of HTV-9 Pass on 22nd May 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Kounotori 9 (こうのとり9号機), also known as HTV-9 is the 9th flight of the H-II Transfer Vehicle, a robotic cargo spacecraft to resupply the International Space Station.[3][4] It was launched on 20 May 2020, at 17:31:00 UTC.
+
+
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49924700773/in/dateposted-public/" title="HTV-9 Supply Vehicle Pass 2020-05-22"><img src="https://live.staticflickr.com/65535/49924700773_14a7ae929c_c.jpg" width="800" height="533" alt="HTV-9 Supply Vehicle Pass 2020-05-22"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+*HTV-9 Supply Vehicle Pass 2020-05-22*
+
+HTV-9 Supply Vehicle Pass in 7 frames, 20 seconds each, taken 2020-05-22 from 22:01:43 UT to 22:04:01 UT. Canon EOS 450D with 8mm Fisheye lens at ISO 400
+
+Static Exposure of ISS Pass #2 22nd May 2020
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49924700563/in/dateposted-public/" title="ISS Pass #2 2020-05-22"><img src="https://live.staticflickr.com/65535/49924700563_b15b0808f9_c.jpg" width="800" height="533" alt="ISS Pass #2 2020-05-22"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+*ISS Pass #2 2020-05-22*
+
+ISS Pass in 14 frames, 30 seconds each, taken 2020-05-22 from 22:41:23 UT to 22:49:10 UT. Canon EOS 450D with 8mm Fisheye lens at ISO 400
+
 .. links
 
 .. _`Raspberry Pi powered DSLR controller`: {filename}/observing/2020-05-10_building-a-raspberry-pi-flavoured-dslr-control-unit.rst
 .. _`d`: https://en.wikipedia.org/wiki/Full_moon#Full_moon_names
+.. _`International Space Station`: https://www.nasa.gov/mission_pages/station/main/index.html
