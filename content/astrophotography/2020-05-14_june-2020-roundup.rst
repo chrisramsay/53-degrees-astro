@@ -69,15 +69,29 @@ secs each at ISO 800. Total integration time of 140 minutes (2 hours 20 minutes
 Venus and Mercury Conjunctions
 ++++++++++++++++++++++++++++++
 
-21st May
-~~~~~~~~
+Night 1, 21st May
+~~~~~~~~~~~~~~~~~
 
 Venus and Mercury will be in close conjunction this evening, approx 1.5 degrees apart and 15 degrees altitude (for Venus) as the Sun set
 
-22nd May
-~~~~~~~~
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49925344351/in/dateposted-public/" title="Venus and Mercury Conjunction, taken 2020-05-21 at 20:55:05 UT"><img src="https://live.staticflickr.com/65535/49925344351_2e75107053_c.jpg" width="544" height="800" alt="Venus and Mercury Conjunction, taken 2020-05-21 at 20:55:05 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+*Venus and Mercury Conjunction, taken 2020-05-21 at 20:55:05 UT*
+
+Measure degree separation in Stellarium
+
+Night 2, 22nd May
+~~~~~~~~~~~~~~~~~
 
 Venus and Mercury will be in close conjunction this evening, approx 1.5 degrees apart and 15 degrees altitude (for Venus) as the Sun sets
+
+.. raw:: html
+
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49925343556/in/dateposted-public/" title="Venus and Mercury Conjunction, taken 2020-05-22 at 20:45:22 UT"><img src="https://live.staticflickr.com/65535/49925343556_b93f711a19_c.jpg" width="800" height="533" alt="Venus and Mercury Conjunction, taken 2020-05-22 at 20:45:22 UT"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+*Venus and Mercury Conjunction, taken 2020-05-22 at 20:45:22 UT*
 
 ISS and Associated Passes
 +++++++++++++++++++++++++
