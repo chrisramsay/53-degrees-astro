@@ -5,14 +5,14 @@ from __future__ import unicode_literals
 # Main
 AUTHOR = '53° Astro'
 SITENAME = '53° Astro'
-SITEURL = 'http://172.17.0.2'
+SITEURL = 'http://172.17.0.3'
 PATH = 'content'
 TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'en'
 DEFAULT_PAGINATION = 10
 DEFAULT_METADATA = {
     'status': 'draft',
-	'author': '53° Astro',
+        'author': '53° Astro',
 }
 DEFAULT_DATE = 'fs'
 
