@@ -26,7 +26,7 @@ statement "moving from Linux to Windows", but this is exactly what
 will be happening with my main imaging scope set up in a few days.
 For those who don't know anything about me, I have spent decades...
 (hmm, yes it is now measurable in decades!) using Linux based operating
-systems - since the early `Red Hat` days of the late 1990's, and being
+systems - since the early `Red Hat`_ days of the late 1990's, and being
 comfortable with that environment, it has always been the first port of
 call for any home project, such as a telescope mounted observation
 control platform.
