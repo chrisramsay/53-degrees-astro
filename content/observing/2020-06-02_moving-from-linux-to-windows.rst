@@ -33,10 +33,32 @@ control platform.
 
 .. PELICAN_END_SUMMARY
 
+Problems
+++++++++
 * Windows software more widely used, SGP Pro, N.I.N.A.?? Try :)
 * Multiple issues with EKOS - corrupt DB, crashes, terrible UI, polar align tool
+
+Solution
+++++++++
+
 * Bye bye Pi, hello mini PC
+* 64 bit machine
+
+What am I Installing?
++++++++++++++++++++++
+
+* `ASCOM 6.x`_
+* 64 bit drivers for stuff
+* `Pegasus UPB software`_
+* `SGP Pro`_
+* `Cartes du Ciel`_
+* `Stellarium`_ (because I love it)
 
 .. links
 
 .. _`Red Hat`: https://en.wikipedia.org/wiki/Red_Hat_Linux
+.. _`ASCOM 6.x`: https://ascom-standards.org/Help/Platform/html/bfd53b69-9f13-489b-9a98-50c60d2a633b.htm
+.. _`Pegasus UPB Software`: https://pegasusastro.com/support/
+.. _`SGP Pro`: https://mainsequencesoftware.com/products/sgpro
+.. _`Cartes du Ciel`: https://www.ap-i.net/skychart/en/start
+.. _`Stellarium`: https://stellarium.org/
