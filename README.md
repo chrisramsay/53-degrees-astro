@@ -16,7 +16,7 @@ Output directory mounted to `/output` in container
 `/volume/sites/53-degrees-astro/output/`
 
 Theme directory (git repo), (chosen theme)- mounted to `/theme` in container
-`/volume/pelican-themes/chosen-theme`
+`/volume/pelican-themes/chosen-theme/`
 
 Plugins directory (git repo) - mounted to `/plugins` in container
 `/volume/pelican-plugins/`
