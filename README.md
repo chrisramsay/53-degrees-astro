@@ -7,7 +7,7 @@ Config file
 `/volume/sites/53-degrees-astro/pelicanconf.py`
 
 Site itself - mounted to `/site` in container
-`/volume/sites/53-degrees-astro/build`
+`/volume/sites/53-degrees-astro/build/`
 
 Content directory - mounted to `/content` in container
 `/volume/sites/53-degrees-astro/content/`
