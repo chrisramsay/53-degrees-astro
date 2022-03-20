@@ -15,7 +15,9 @@ June 2020 Roundup
 
 .. PELICAN_BEGIN_SUMMARY
 
-So here begins the June 2020 roundup.
+So here begins the June 2020 roundup. This month is a bit of a random collection of the moon,
+satellite passes, star trails and an inner Solar system planetary conjunction!
+
 
 .. PELICAN_END_SUMMARY
 
@@ -31,8 +33,10 @@ Almost Full Moon 5th May 2020
 
 *Moon with Bird, taken 2020-05-05 at 19:28:56 UT*
 
-Canon EOS 550D with a Sigma 70-300mm lens at ƒ/14.0, 263.0 mm. Exposure 1/1600
-of a second, ISO 6400. Moon phase is 96.2%, Moon age is 12.9 days.
+Here we have a static tripod shot of the moon with the addition of a bird flitting 
+past at the same time. Taken with the (new to me) Canon EOS 550D with a Sigma 
+70-300mm lens at ƒ/14.0, 263.0 mm. Exposure 1/1600 of a second, ISO 6400. Moon 
+phase is 96.2%, Moon age is 12.9 days.
 
 Flower Moon 6th May 2020
 ~~~~~~~~~~~~~~~~~~~~~~~~
