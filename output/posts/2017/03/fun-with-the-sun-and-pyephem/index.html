@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Fun with the Sun and PyEphem - 53° Astro</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="http://127.0.0.1:8000/posts/2017/03/fun-with-the-sun-and-pyephem">
+
+        <meta name="author" content="Chris Ramsay" />
+        <meta name="keywords" content="astronomy,python,programming" />
+        <meta name="description" content="In this article I have a play with PyEphem and our local star, both as an opportunity to draw some pretty graphs and answer a few basic astronomy related questions, such as: what does the equation of time look like and is there a difference in the time it takes for the sun to set during the year." />
+
+        <meta property="og:site_name" content="53° Astro" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Fun with the Sun and PyEphem"/>
+        <meta property="og:url" content="http://127.0.0.1:8000/posts/2017/03/fun-with-the-sun-and-pyephem"/>
+        <meta property="og:description" content="In this article I have a play with PyEphem and our local star, both as an opportunity to draw some pretty graphs and answer a few basic astronomy related questions, such as: what does the equation of time look like and is there a difference in the time it takes for the sun to set during the year."/>
+        <meta property="article:published_time" content="2017-03-12" />
+            <meta property="article:section" content="astronomy" />
+            <meta property="article:tag" content="astronomy" />
+            <meta property="article:tag" content="python" />
+            <meta property="article:tag" content="programming" />
+            <meta property="article:author" content="Chris Ramsay" />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="http://127.0.0.1:8000/theme/css/bootstrap.darkly.min.css" type="text/css"/>
+    <link href="http://127.0.0.1:8000/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="http://127.0.0.1:8000/theme/css/pygments/solarazeddark.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/theme/css/style.css" type="text/css"/>
+
+
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://127.0.0.1:8000/" class="navbar-brand">
+53° Astro            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="http://127.0.0.1:8000/category/astronomy">Astronomy</a>
+                        </li>
+                        <li >
+                            <a href="http://127.0.0.1:8000/category/astrophotography">Astrophotography</a>
+                        </li>
+                        <li >
+                            <a href="http://127.0.0.1:8000/category/observing">Observing</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="http://127.0.0.1:8000/archives/"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<!-- Banner -->
+<!-- End Banner -->
+
+<!-- Content Container -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="http://127.0.0.1:8000/posts/2017/03/fun-with-the-sun-and-pyephem"
+                       rel="bookmark"
+                       title="Permalink to Fun with the Sun and PyEphem">
+                        Fun with the Sun and PyEphem
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2017-03-12T00:00:00+01:00"> Sun 12 March 2017</time>
+    </span>
+
+
+            <span class="label label-default">By</span>
+            <a href="http://127.0.0.1:8000/author/chris-ramsay"><i class="fa fa-user"></i> Chris Ramsay</a>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="http://127.0.0.1:8000/tag/astronomy">astronomy</a>
+        /
+	<a href="http://127.0.0.1:8000/tag/python">python</a>
+        /
+	<a href="http://127.0.0.1:8000/tag/programming">programming</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <style>
+table.dataframe td {
+    padding: 0px 5px 0px 5px;
+}
+</style><div class="contents topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#setting-up-the-observer" id="toc-entry-1">Setting up the observer</a></li>
+<li><a class="reference internal" href="#fun-with-the-sun" id="toc-entry-2">Fun with the Sun</a><ul>
+<li><a class="reference internal" href="#rising-transit-setting" id="toc-entry-3">Rising, Transit &amp; Setting</a></li>
+<li><a class="reference internal" href="#apparent-solar-time" id="toc-entry-4">Apparent Solar Time</a></li>
+<li><a class="reference internal" href="#drawing-the-analemma" id="toc-entry-5">Drawing the Analemma</a><ul>
+<li><a class="reference internal" href="#local-noon" id="toc-entry-6">Local Noon</a></li>
+<li><a class="reference internal" href="#changing-the-time-of-day-we-view-the-analemma" id="toc-entry-7">Changing the time of day we view the analemma</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#calculating-twilights" id="toc-entry-8">Calculating Twilights</a><ul>
+<li><a class="reference internal" href="#aside-where-on-the-disc" id="toc-entry-9">Aside: Where on the Disc?</a></li>
+<li><a class="reference internal" href="#the-calculations" id="toc-entry-10">The Calculations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sunset-length-throughout-the-year" id="toc-entry-11">Sunset length throughout the year</a></li>
+<li><a class="reference internal" href="#conclusion" id="toc-entry-12">Conclusion</a></li>
+</ul>
+</div>
+
+<p>In this article I have a play with <a class="reference external" href="http://rhodesmill.org/pyephem/">PyEphem</a> and our local star, both as an
+opportunity to draw some pretty graphs and answer a few basic astronomy related
+questions, such as: what does the equation of time look like and is there a
+difference in the time it takes for the sun to set during the year.</p>
+
+<div class="section" id="setting-up-the-observer">
+<h2><a class="toc-backref" href="#toc-entry-1">Setting up the observer</a></h2>
+<p>Import the libraries I am going to need and then set up the observer; I require
+a latitude, longitude and date as a minimum.</p>
+<div class="highlight"><pre><span></span><span class="c1"># Import some bits</span>
+<span class="kn">import</span> <span class="nn">ephem</span><span class="o">,</span> <span class="nn">math</span><span class="o">,</span> <span class="nn">datetime</span>
+<span class="c1"># Get retina display quality for plots</span>
+<span class="o">%</span><span class="n">config</span> <span class="n">InlineBackend</span><span class="o">.</span><span class="n">figure_format</span> <span class="o">=</span> <span class="s1">&#39;retina&#39;</span>
+
+<span class="n">home</span> <span class="o">=</span> <span class="n">ephem</span><span class="o">.</span><span class="n">Observer</span><span class="p">()</span>
+<span class="c1"># Set up</span>
+<span class="n">home</span><span class="o">.</span><span class="n">date</span> <span class="o">=</span> <span class="s1">&#39;2017-01-01 09:00:00&#39;</span>
+<span class="n">home</span><span class="o">.</span><span class="n">lat</span> <span class="o">=</span> <span class="s1">&#39;53.4975&#39;</span>
+<span class="n">home</span><span class="o">.</span><span class="n">lon</span> <span class="o">=</span> <span class="s1">&#39;-0.3154&#39;</span>
+</pre></div>
+<p>Note that the standard and unmodified object has an elevation of 0.0m,
+temperature of 15.0 degrees Celsius and a pressure of 1010.0 millibars. I did
+wonder whether or not changing these values would make any difference to the
+various calculations. Maybe later...</p>
+<div class="highlight"><pre><span></span><span class="n">home</span><span class="o">.</span><span class="n">elev</span>
+</pre></div>
+<pre class="literal-block">
+0.0
+</pre>
+<div class="highlight"><pre><span></span><span class="n">home</span><span class="o">.</span><span class="n">temp</span>
+</pre></div>
+<pre class="literal-block">
+15.0
+</pre>
+<div class="highlight"><pre><span></span><span class="n">home</span><span class="o">.</span><span class="n">pressure</span>
+</pre></div>
+<pre class="literal-block">
+1010.0
+</pre>
+<p>Let’s set up the sun next and then compute it from the observer’s position.</p>
+<p>&nbsp;</p>
+</div>
+<div class="section" id="fun-with-the-sun">
+<h2><a class="toc-backref" href="#toc-entry-2">Fun with the Sun</a></h2>
+<p>Setting up the sun is easy, just:</p>
+<div class="highlight"><pre><span></span><span class="n">sun</span> <span class="o">=</span> <span class="n">ephem</span><span class="o">.</span><span class="n">Sun</span><span class="p">()</span>
+<span class="n">sun</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">home</span><span class="p">)</span>
+</pre></div>
+<div class="section" id="rising-transit-setting">
+<h3><a class="toc-backref" href="#toc-entry-3">Rising, Transit &amp; Setting</a></h3>
+<p>From there we can get information regarding (from the observer’s point of view)
+when the last sunrise was, when local noon will occur and when the next sunset
+is:</p>
+<div class="highlight"><pre><span></span><span class="n">rising</span> <span class="o">=</span> <span class="n">home</span><span class="o">.</span><span class="n">previous_rising</span><span class="p">(</span><span class="n">sun</span><span class="p">)</span><span class="o">.</span><span class="n">datetime</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Sunrise is at </span><span class="si">{}</span><span class="s1">:</span><span class="si">{}</span><span class="s1">:</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">rising</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="n">rising</span><span class="o">.</span><span class="n">minute</span><span class="p">,</span> <span class="n">rising</span><span class="o">.</span><span class="n">second</span><span class="p">))</span>
+
+<span class="n">transit</span> <span class="o">=</span> <span class="n">home</span><span class="o">.</span><span class="n">next_transit</span><span class="p">(</span><span class="n">sun</span><span class="p">)</span><span class="o">.</span><span class="n">datetime</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Local noon is at </span><span class="si">{}</span><span class="s1">:</span><span class="si">{}</span><span class="s1">:</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">transit</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="n">transit</span><span class="o">.</span><span class="n">minute</span><span class="p">,</span> <span class="n">transit</span><span class="o">.</span><span class="n">second</span><span class="p">))</span>
+
+<span class="n">setting</span> <span class="o">=</span> <span class="n">home</span><span class="o">.</span><span class="n">next_setting</span><span class="p">(</span><span class="n">sun</span><span class="p">)</span><span class="o">.</span><span class="n">datetime</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Sunset is at </span><span class="si">{}</span><span class="s1">:</span><span class="si">{}</span><span class="s1">:</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">setting</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="n">setting</span><span class="o">.</span><span class="n">minute</span><span class="p">,</span> <span class="n">setting</span><span class="o">.</span><span class="n">second</span><span class="p">))</span>
+</pre></div>
+<pre class="literal-block">
+Sunrise is at 8:16:47
+Local noon is at 12:4:56
+Sunset is at 15:53:17
+</pre>
+<p>&nbsp;</p>
+</div>
+<div class="section" id="apparent-solar-time">
+<h3><a class="toc-backref" href="#toc-entry-4">Apparent Solar Time</a></h3>
+<p>As our Earth does not have a perfectly circular orbit around the sun, the sun is
+not exactly due south (otherwise known as a transit) every day at 12:00.
+Depending on the time of year it can be as much as 16 minutes early or late,
+equating to almost 4° west or east from due south. Let’s draw a graph to
+illustrate what’s known as the <a class="reference external" href="https://en.wikipedia.org/wiki/Equation_of_time">equation of time</a>.</p>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="n">matplotlib</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;ggplot&#39;</span><span class="p">)</span>
+
+<span class="c1"># Prepare</span>
+<span class="n">home</span><span class="o">.</span><span class="n">date</span> <span class="o">=</span> <span class="s1">&#39;2017/1/1&#39;</span>
+<span class="n">sun</span> <span class="o">=</span> <span class="n">ephem</span><span class="o">.</span><span class="n">Sun</span><span class="p">()</span>
+<span class="n">times</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">def</span> <span class="nf">get_diff</span><span class="p">(</span><span class="n">tm</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Return a difference in seconds between tm and 12:00:00 on tm&#39;s date&quot;&quot;&quot;</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">combine</span><span class="p">(</span><span class="n">tm</span><span class="p">,</span> <span class="n">datetime</span><span class="o">.</span><span class="n">time</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">a</span><span class="o">-</span><span class="n">tm</span><span class="p">)</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span><span class="o">/</span><span class="mi">60</span>
+
+<span class="c1"># Prepare the data</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">368</span><span class="p">):</span>
+    <span class="n">home</span><span class="o">.</span><span class="n">date</span> <span class="o">+=</span> <span class="n">ephem</span><span class="o">.</span><span class="n">Date</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">trans</span> <span class="o">=</span> <span class="n">home</span><span class="o">.</span><span class="n">next_transit</span><span class="p">(</span><span class="n">sun</span><span class="p">)</span><span class="o">.</span><span class="n">datetime</span><span class="p">()</span>
+    <span class="n">times</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">get_diff</span><span class="p">(</span><span class="n">trans</span><span class="p">))</span>
+
+<span class="c1"># Set up</span>
+<span class="n">ts</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">times</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="s1">&#39;2017/1/1&#39;</span><span class="p">,</span> <span class="n">periods</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">times</span><span class="p">)))</span>
+</pre></div>
+<p>What are we doing above? Well we are graphing the difference between the time of
+the transit of the Sun at the <tt class="docutils literal">home</tt> location and the local time. Let’s have a
+look at a slice of <tt class="docutils literal">ts</tt>:</p>
+<div class="highlight"><pre><span></span><span class="n">ts</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;2017-04-14&#39;</span><span class="p">:</span><span class="s1">&#39;2017-04-26&#39;</span><span class="p">]</span>
+</pre></div>
+<pre class="literal-block">
+2017-04-14   -1.234778
+2017-04-15   -0.997353
+2017-04-16   -0.766400
+2017-04-17   -0.542189
+2017-04-18   -0.324979
+2017-04-19   -0.115009
+2017-04-20    0.087500
+2017-04-21    0.282349
+2017-04-22    0.469363
+2017-04-23    0.648394
+2017-04-24    0.819315
+2017-04-25    0.982023
+2017-04-26    1.136433
+Freq: D, dtype: float64
+</pre>
+<p>Go ahead and run the plot:</p>
+<div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">ts</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s2">&quot;figure.figsize&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;Variation (minutes)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+<span class="c1"># Fire</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+<p>&nbsp;</p>
+<img alt="Plot of local time versus Sun transit time" src="https://live.staticflickr.com/65535/49368284532_3676f2c8cf_c.jpg" style="width: 403px; height: 275px;" />
+<p><em>The difference between transit of the Sun at home location and local time.</em></p>
+<p>So you can see that there are only 4 points in the year where local noon and the
+sun actually intersect!</p>
+</div>
+<div class="section" id="drawing-the-analemma">
+<h3><a class="toc-backref" href="#toc-entry-5">Drawing the Analemma</a></h3>
+<p>An analemma is the shape the sun will trace out if you were to note its position
+in the sky at the same time of day once a week over the passage of a year. The
+shape is a combination of the equation of time and the Earth’s passage around
+the sun.</p>
+<div class="section" id="local-noon">
+<h4><a class="toc-backref" href="#toc-entry-6">Local Noon</a></h4>
+<p>Let’s have a go at drawing the analemma occurring at <tt class="docutils literal">home</tt> at local
+noon (12:00:00):</p>
+<div class="highlight"><pre><span></span><span class="c1"># Prepare</span>
+<span class="n">home</span><span class="o">.</span><span class="n">date</span> <span class="o">=</span> <span class="s1">&#39;2017/1/1 12:00:00&#39;</span>
+<span class="n">sun</span> <span class="o">=</span> <span class="n">ephem</span><span class="o">.</span><span class="n">Sun</span><span class="p">()</span>
+<span class="n">posx</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">posy</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># Solstice altitude</span>
+<span class="n">phi</span> <span class="o">=</span> <span class="mi">90</span> <span class="o">-</span> <span class="n">math</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">home</span><span class="o">.</span><span class="n">lat</span><span class="p">)</span>
+<span class="c1"># Earth axial tilt</span>
+<span class="n">epsilon</span> <span class="o">=</span> <span class="mf">23.439</span>
+
+<span class="k">def</span> <span class="nf">get_sun_az</span><span class="p">(</span><span class="n">tm</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Get the azimuth based on a date&quot;&quot;&quot;</span>
+    <span class="n">sun</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">tm</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">sun</span><span class="o">.</span><span class="n">az</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">get_sun_alt</span><span class="p">(</span><span class="n">tm</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Get the altitude based on a date&quot;&quot;&quot;</span>
+    <span class="n">sun</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">tm</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">sun</span><span class="o">.</span><span class="n">alt</span><span class="p">)</span>
+
+<span class="c1"># Prepare the data</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">368</span><span class="p">):</span>
+    <span class="n">home</span><span class="o">.</span><span class="n">date</span> <span class="o">+=</span> <span class="n">ephem</span><span class="o">.</span><span class="n">Date</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">trans</span> <span class="o">=</span> <span class="n">home</span><span class="o">.</span><span class="n">next_transit</span><span class="p">(</span><span class="n">sun</span><span class="p">)</span><span class="o">.</span><span class="n">datetime</span><span class="p">()</span>
+    <span class="n">posx</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">get_sun_az</span><span class="p">(</span><span class="n">home</span><span class="p">))</span>
+    <span class="n">posy</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">get_sun_alt</span><span class="p">(</span><span class="n">home</span><span class="p">))</span>
+
+<span class="c1"># Set up</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">posx</span><span class="p">,</span> <span class="n">posy</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;Azimuth (°)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;Altitude (°)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+<span class="c1"># Add some labels, lines &amp; resize</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;Vernal equinox&#39;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">posx</span><span class="p">),</span> <span class="n">phi</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">posx</span><span class="p">),</span> <span class="n">phi</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;Autumnal equinox&#39;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">posx</span><span class="p">)</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="n">phi</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">posx</span><span class="p">)</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="n">phi</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;Nothern solstice&#39;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="mf">180.1</span><span class="p">,</span> <span class="n">phi</span> <span class="o">+</span> <span class="n">epsilon</span> <span class="o">+</span> <span class="mi">1</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mf">180.1</span><span class="p">,</span> <span class="n">phi</span> <span class="o">+</span> <span class="n">epsilon</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s1">&#39;Southern solstice&#39;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="mf">180.1</span><span class="p">,</span> <span class="n">phi</span> <span class="o">-</span> <span class="n">epsilon</span> <span class="o">-</span> <span class="mi">2</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mf">180.1</span><span class="p">,</span> <span class="n">phi</span> <span class="o">-</span> <span class="n">epsilon</span> <span class="o">-</span> <span class="mi">2</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">((</span><span class="nb">min</span><span class="p">(</span><span class="n">posx</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">posx</span><span class="p">)),</span> <span class="p">(</span><span class="n">phi</span> <span class="o">+</span> <span class="n">epsilon</span><span class="p">,</span> <span class="n">phi</span> <span class="o">+</span> <span class="n">epsilon</span><span class="p">),</span> <span class="s1">&#39;blue&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">((</span><span class="nb">min</span><span class="p">(</span><span class="n">posx</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">posx</span><span class="p">)),</span> <span class="p">(</span><span class="n">phi</span><span class="p">,</span> <span class="n">phi</span><span class="p">),</span> <span class="s1">&#39;pink&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">((</span><span class="nb">min</span><span class="p">(</span><span class="n">posx</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">posx</span><span class="p">)),</span> <span class="p">(</span><span class="n">phi</span> <span class="o">-</span> <span class="n">epsilon</span><span class="p">,</span> <span class="n">phi</span> <span class="o">-</span> <span class="n">epsilon</span><span class="p">),</span> <span class="s1">&#39;green&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="mi">180</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;yellow&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s2">&quot;figure.figsize&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<span class="n">plot_margin</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">x0</span><span class="p">,</span> <span class="n">x1</span><span class="p">,</span> <span class="n">y0</span><span class="p">,</span> <span class="n">y1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">((</span><span class="n">x0</span><span class="p">,</span> <span class="n">x1</span><span class="p">,</span> <span class="n">y0</span> <span class="o">-</span> <span class="n">plot_margin</span><span class="p">,</span> <span class="n">y1</span> <span class="o">+</span> <span class="n">plot_margin</span><span class="p">))</span>
+<span class="c1"># Fire</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+<p>&nbsp;</p>
+<img alt="A plot of the analemma" src="https://live.staticflickr.com/65535/49367608278_8a353b15fb_c.jpg" style="width: 552px; height: 372px;" />
+<p><em>A local analemma</em></p>
+</div>
+<div class="section" id="changing-the-time-of-day-we-view-the-analemma">
+<h4><a class="toc-backref" href="#toc-entry-7">Changing the time of day we view the analemma</a></h4>
+<p>If we change the time of day the analemma is generated at (say 08:30:00)
+a very different picture emerges:</p>
+<div class="highlight"><pre><span></span><span class="c1"># Prepare</span>
+<span class="n">home</span><span class="o">.</span><span class="n">date</span> <span class="o">=</span> <span class="s1">&#39;2017/1/1 08:30:00&#39;</span>
+<span class="n">home</span><span class="o">.</span><span class="n">horizon</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span>
+<span class="n">sun</span> <span class="o">=</span> <span class="n">ephem</span><span class="o">.</span><span class="n">Sun</span><span class="p">()</span>
+<span class="n">posy</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">posx</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">def</span> <span class="nf">get_sun_az</span><span class="p">(</span><span class="n">tm</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Get the azimuth based on a date&quot;&quot;&quot;</span>
+    <span class="n">sun</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">tm</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">sun</span><span class="o">.</span><span class="n">az</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">get_sun_alt</span><span class="p">(</span><span class="n">tm</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Get the altitude based on a date&quot;&quot;&quot;</span>
+    <span class="n">sun</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="n">tm</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">sun</span><span class="o">.</span><span class="n">alt</span><span class="p">)</span>
+
+<span class="c1"># Prepare the data</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">368</span><span class="p">):</span>
+    <span class="n">home</span><span class="o">.</span><span class="n">date</span> <span class="o">+=</span> <span class="n">ephem</span><span class="o">.</span><span class="n">Date</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">posy</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">get_sun_alt</span><span class="p">(</span><span class="n">home</span><span class="p">))</span>
+    <span class="n">posx</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">get_sun_az</span><span class="p">(</span><span class="n">home</span><span class="p">))</span>
+
+<span class="c1"># Set up</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">posx</span><span class="p">,</span> <span class="n">posy</span><span class="p">)</span>
+<span class="c1"># Add some labels &amp; resize</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;Azimuth (°)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;Altitude (°)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s2">&quot;figure.figsize&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<span class="c1"># Fire</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+<p>&nbsp;</p>
+<img alt="Analemma plot with time changed" src="https://live.staticflickr.com/65535/49368284372_f302810a85_c.jpg" style="width: 552px; height: 372px;" />
+<p><em>Analemma plot with time changed</em></p>
+<p>As can be seen above, at mid December southern solstice the Sun is only just
+above the horizon (bottom right on the graph) and almost due south-east (135°)
+in direction. By contrast at northern solstice in June the Sun is more or less
+at 40° and not all that far off due east in direction (top left on the graph).</p>
+</div>
+</div>
+<div class="section" id="calculating-twilights">
+<h3><a class="toc-backref" href="#toc-entry-8">Calculating Twilights</a></h3>
+<p>Which twilight, you might ask. Quite rightly so as there are many definitions:</p>
+<ul class="simple">
+<li>Civil twilight</li>
+<li>Nautical twilight</li>
+<li>Astronomical twilight</li>
+</ul>
+<p>Civil twilight is defined by the centre of the sun being 6° below the horizon.
+Under clear conditions bright planets like Venus are easily seen in the sky.</p>
+<p>Nautical twilight is defined by the centre of the sun being 12° below the
+horizon. If the sun is lower it becomes impossible to navigate at sea using the
+horizon.</p>
+<p>Astronomical twilight is defined by the centre of the sun being 18° below the
+horizon. At this point it becomes quite easy to see stars and other objects
+under clear sky conditions.</p>
+<div class="figure">
+<img alt="Twilight illustration" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Twilight_subcategories.svg/500px-Twilight_subcategories.svg.png" />
+<p class="caption">Twilight illustration</p>
+</div>
+<p>By TWCarlson (Own work) [CC BY-SA 3.0 (
+<a class="reference external" href="http://creativecommons.org/licenses/by-sa/3.0">http://creativecommons.org/licenses/by-sa/3.0</a>) or GFDL (
+<a class="reference external" href="http://www.gnu.org/copyleft/fdl.html">http://www.gnu.org/copyleft/fdl.html</a>)], via Wikimedia Commons</p>
+<div class="section" id="aside-where-on-the-disc">
+<h4><a class="toc-backref" href="#toc-entry-9">Aside: Where on the Disc?</a></h4>
+<p>Let’s have a look a twilight calculations using <tt class="docutils literal">ephem</tt>. By default,
+<tt class="docutils literal">ephem</tt> uses the edge of the sun’s disc for sunset / sunrise calculations;
+standard definitions use the centre of the sun’s disc. What is the difference
+between using the edge of the sun and the centre of the sun’s disc to calculate
+when ordinary (zero degrees horizon) twilight occurs?</p>
+<div class="highlight"><pre><span></span><span class="n">initial_set</span> <span class="o">=</span> <span class="n">home</span><span class="o">.</span><span class="n">next_setting</span><span class="p">(</span><span class="n">sun</span><span class="p">)</span><span class="o">.</span><span class="n">datetime</span><span class="p">()</span> <span class="c1"># zero edge</span>
+<span class="n">next_set</span> <span class="o">=</span> <span class="n">home</span><span class="o">.</span><span class="n">next_setting</span><span class="p">(</span><span class="n">sun</span><span class="p">,</span> <span class="n">use_center</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">datetime</span><span class="p">()</span> <span class="c1"># zero centre</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Centre sunset is at </span><span class="si">{}</span><span class="s1">:</span><span class="si">{}</span><span class="s1">:</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">next_set</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="n">next_set</span><span class="o">.</span><span class="n">minute</span><span class="p">,</span> <span class="n">next_set</span><span class="o">.</span><span class="n">second</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Edge sunset is at </span><span class="si">{}</span><span class="s1">:</span><span class="si">{}</span><span class="s1">:</span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">initial_set</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="n">initial_set</span><span class="o">.</span><span class="n">minute</span><span class="p">,</span> <span class="n">initial_set</span><span class="o">.</span><span class="n">second</span><span class="p">))</span>
+
+<span class="n">delta</span> <span class="o">=</span> <span class="n">initial_set</span> <span class="o">-</span> <span class="n">next_set</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Time difference is </span><span class="si">{}</span><span class="s1"> mins, </span><span class="si">{}</span><span class="s1"> secs&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">delta</span><span class="o">.</span><span class="n">seconds</span><span class="o">/</span><span class="mi">60</span><span class="p">,</span> <span class="n">delta</span><span class="o">.</span><span class="n">seconds</span><span class="o">%</span><span class="mi">60</span><span class="p">))</span>
+</pre></div>
+<pre class="literal-block">
+Centre sunset is at 15:52:26
+Edge sunset is at 15:55:20
+Time difference is 2.9 mins, 54 secs
+</pre>
+</div>
+<div class="section" id="the-calculations">
+<h4><a class="toc-backref" href="#toc-entry-10">The Calculations</a></h4>
+<p>Okay, so let’s write up a basic method to print the different twilight times and
+how long after normal twilight they occur. The method below yields the amount of
+time in seconds it takes the Sun to move from sunset on the horizon to positions
+below the horizon of -6°, -12° and -18° respectively:</p>
+<div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_setting_twilights</span><span class="p">(</span><span class="n">obs</span><span class="p">,</span> <span class="n">body</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Returns a list of twilight datetimes in epoch format&quot;&quot;&quot;</span>
+    <span class="n">results</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="c1"># Twilights, their horizons and whether to use the centre of the Sun or not</span>
+    <span class="n">twilights</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;0&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;-6&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;-12&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;-18&#39;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)]</span>
+    <span class="k">for</span> <span class="n">twi</span> <span class="ow">in</span> <span class="n">twilights</span><span class="p">:</span>
+        <span class="c1"># Zero the horizon</span>
+        <span class="n">obs</span><span class="o">.</span><span class="n">horizon</span> <span class="o">=</span> <span class="n">twi</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># Get the setting time and date</span>
+            <span class="n">now</span> <span class="o">=</span> <span class="n">obs</span><span class="o">.</span><span class="n">next_setting</span><span class="p">(</span><span class="n">body</span><span class="p">,</span> <span class="n">use_center</span><span class="o">=</span><span class="n">twi</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">datetime</span><span class="p">()</span>
+            <span class="c1"># Get seconds elapsed since midnight</span>
+            <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                <span class="p">(</span><span class="n">now</span> <span class="o">-</span> <span class="n">now</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">hour</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">minute</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">second</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">microsecond</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span>
+            <span class="p">)</span>
+        <span class="k">except</span> <span class="n">ephem</span><span class="o">.</span><span class="n">AlwaysUpError</span><span class="p">:</span>
+            <span class="c1"># There will be occasions where the sun stays up, make that max seconds</span>
+            <span class="n">results</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mf">86400.0</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">results</span>
+
+<span class="n">home</span><span class="o">.</span><span class="n">horizon</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span>
+<span class="n">twilights</span> <span class="o">=</span> <span class="n">get_setting_twilights</span><span class="p">(</span><span class="n">home</span><span class="p">,</span> <span class="n">sun</span><span class="p">)</span>
+<span class="n">twilights</span>
+</pre></div>
+<pre class="literal-block">
+[57320.284733, 59906.438312, 62546.839518, 65098.990754]
+</pre>
+<p>Now we can get started on calculating some twilights at the <tt class="docutils literal">home</tt> location.
+First reset the date to the first day of 2017, set the horizon to zero degrees,
+set up a <tt class="docutils literal">sun</tt> body and then off we go:</p>
+<div class="highlight"><pre><span></span><span class="c1"># Prepare</span>
+<span class="n">home</span><span class="o">.</span><span class="n">date</span> <span class="o">=</span> <span class="s1">&#39;2017/01/01 12:00:00&#39;</span>
+<span class="n">home</span><span class="o">.</span><span class="n">horizon</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span>
+<span class="n">sun</span> <span class="o">=</span> <span class="n">ephem</span><span class="o">.</span><span class="n">Sun</span><span class="p">()</span>
+<span class="n">twidataset</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># Calculate just over a year of data</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">368</span><span class="p">):</span>
+    <span class="n">home</span><span class="o">.</span><span class="n">date</span> <span class="o">+=</span> <span class="n">ephem</span><span class="o">.</span><span class="n">Date</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">twidataset</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">get_setting_twilights</span><span class="p">(</span><span class="n">home</span><span class="p">,</span> <span class="n">sun</span><span class="p">))</span>
+</pre></div>
+<p>What does <tt class="docutils literal">twidataset</tt> contain? Well, it is just a list of lists for now as
+can be seen from the slice below:</p>
+<div class="highlight"><pre><span></span><span class="n">twidataset</span><span class="p">[</span><span class="mi">150</span><span class="p">:</span><span class="mi">160</span><span class="p">]</span>
+</pre></div>
+<pre class="literal-block">
+[[73229.081533, 76304.927372, 81102.660945, 86400.0],
+ [73298.278985, 76390.550644, 81255.72959, 86400.0],
+ [73365.046584, 76473.20831, 81405.712504, 86400.0],
+ [73429.309671, 76552.779425, 81552.226662, 86400.0],
+ [73490.995712, 76629.145042, 81694.856699, 86400.0],
+ [73550.034189, 76702.188545, 81833.158322, 86400.0],
+ [73606.356557, 76771.796561, 81966.651319, 86400.0],
+ [73659.896242, 76837.858304, 82094.829296, 86400.0],
+ [73710.588832, 76900.266566, 82217.151337, 86400.0],
+ [73758.372248, 76958.918635, 82333.05185, 86400.0]]
+</pre>
+<p>I’m now going to change the list into a <tt class="docutils literal">pandas</tt> <tt class="docutils literal">DataFrame</tt> object:</p>
+<div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">twidataset</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Sunset&#39;</span><span class="p">,</span> <span class="s1">&#39;Civil&#39;</span><span class="p">,</span> <span class="s1">&#39;Nautical&#39;</span><span class="p">,</span> <span class="s1">&#39;Astronomical&#39;</span><span class="p">])</span>
+</pre></div>
+<p>Let’s have a peek at a slice of the data frame:</p>
+<div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="mi">150</span><span class="p">:</span><span class="mi">160</span><span class="p">]</span>
+</pre></div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Sunset</th>
+      <th>Civil</th>
+      <th>Nautical</th>
+      <th>Astronomical</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>150</th>
+      <td>73229.081533</td>
+      <td>76304.927372</td>
+      <td>81102.660945</td>
+      <td>86400.0</td>
+    </tr>
+    <tr>
+      <th>151</th>
+      <td>73298.278985</td>
+      <td>76390.550644</td>
+      <td>81255.729590</td>
+      <td>86400.0</td>
+    </tr>
+    <tr>
+      <th>152</th>
+      <td>73365.046584</td>
+      <td>76473.208310</td>
+      <td>81405.712504</td>
+      <td>86400.0</td>
+    </tr>
+    <tr>
+      <th>153</th>
+      <td>73429.309671</td>
+      <td>76552.779425</td>
+      <td>81552.226662</td>
+      <td>86400.0</td>
+    </tr>
+    <tr>
+      <th>154</th>
+      <td>73490.995712</td>
+      <td>76629.145042</td>
+      <td>81694.856699</td>
+      <td>86400.0</td>
+    </tr>
+    <tr>
+      <th>155</th>
+      <td>73550.034189</td>
+      <td>76702.188545</td>
+      <td>81833.158322</td>
+      <td>86400.0</td>
+    </tr>
+    <tr>
+      <th>156</th>
+      <td>73606.356557</td>
+      <td>76771.796561</td>
+      <td>81966.651319</td>
+      <td>86400.0</td>
+    </tr>
+    <tr>
+      <th>157</th>
+      <td>73659.896242</td>
+      <td>76837.858304</td>
+      <td>82094.829296</td>
+      <td>86400.0</td>
+    </tr>
+    <tr>
+      <th>158</th>
+      <td>73710.588832</td>
+      <td>76900.266566</td>
+      <td>82217.151337</td>
+      <td>86400.0</td>
+    </tr>
+    <tr>
+      <th>159</th>
+      <td>73758.372248</td>
+      <td>76958.918635</td>
+      <td>82333.051850</td>
+      <td>86400.0</td>
+    </tr>
+  </tbody>
+</table>
+</div><p>The data is ready, so it’s time for some charting. This chart needs a couple of
+formatters to clean up the tick labels as well as some limit setting to focus in
+on the interesting bits.</p>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib.ticker</span> <span class="kn">import</span> <span class="n">FuncFormatter</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="k">def</span> <span class="nf">timeformatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">pos</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;The two args are the value and tick position&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">:</span><span class="si">{}</span><span class="s1">:</span><span class="si">{:02d}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="o">/</span><span class="mi">3600</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="o">/</span><span class="mi">24</span><span class="o">/</span><span class="mi">60</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="o">%</span><span class="mi">60</span><span class="p">))</span>
+
+<span class="k">def</span> <span class="nf">dateformatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">pos</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;The two args are the value and tick position&quot;&quot;&quot;</span>
+    <span class="n">dto</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">fromordinal</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="mi">2017</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">toordinal</span><span class="p">()</span> <span class="o">+</span> <span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="k">return</span> <span class="s1">&#39;</span><span class="si">{}</span><span class="s1">-</span><span class="si">{:02d}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">dto</span><span class="o">.</span><span class="n">year</span><span class="p">,</span> <span class="n">dto</span><span class="o">.</span><span class="n">month</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s2">&quot;figure.figsize&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">area</span><span class="p">(</span><span class="n">stacked</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;#e60000&#39;</span><span class="p">,</span> <span class="s1">&#39;#80ccff&#39;</span><span class="p">,</span> <span class="s1">&#39;#33adff&#39;</span><span class="p">,</span> <span class="s1">&#39;#008ae6&#39;</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+<span class="c1"># Sort out x-axis</span>
+<span class="c1"># Demarcate months</span>
+<span class="n">dim</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">28</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">31</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">31</span><span class="p">]</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_ticks</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">cumsum</span><span class="p">(</span><span class="n">dim</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_major_formatter</span><span class="p">(</span><span class="n">FuncFormatter</span><span class="p">(</span><span class="n">dateformatter</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+<span class="c1"># Sort out y-axis</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">yaxis</span><span class="o">.</span><span class="n">set_major_formatter</span><span class="p">(</span><span class="n">FuncFormatter</span><span class="p">(</span><span class="n">timeformatter</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">([</span><span class="mi">55000</span><span class="p">,</span> <span class="mi">86400</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;Time&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+<span class="n">labels</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_xticklabels</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">setp</span><span class="p">(</span><span class="n">labels</span><span class="p">,</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">9</span><span class="p">)</span>
+<span class="c1"># Done</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+<p>&nbsp;</p>
+<img alt="A plot of twilight calculations" src="https://live.staticflickr.com/65535/49368070466_1aa95cf512_c.jpg" style="width: 599px; height: 389px;" />
+<p><em>A plot of twilight calculations</em></p>
+<p>As can be seen in the graph above, there are 78 days (day 131 to day 208
+inclusive) where there is no Astronomical twilight because the sun does
+not reach -18° below the horizon at my <tt class="docutils literal">home</tt> latitude. This is
+demonstrated below by searching a subset of the data frame accordingly:</p>
+<div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Astronomical&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mf">86400.0</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Sunset</th>
+      <th>Civil</th>
+      <th>Nautical</th>
+      <th>Astronomical</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>131</th>
+      <td>71562.188604</td>
+      <td>74280.738322</td>
+      <td>77955.756763</td>
+      <td>86400.0</td>
+    </tr>
+  </tbody>
+</table>
+</div><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Astronomical&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mf">86400.0</span><span class="p">]</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Sunset</th>
+      <th>Civil</th>
+      <th>Nautical</th>
+      <th>Astronomical</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>208</th>
+      <td>72158.162401</td>
+      <td>74867.786881</td>
+      <td>78520.29891</td>
+      <td>86400.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+</div>
+<div class="section" id="sunset-length-throughout-the-year">
+<h2><a class="toc-backref" href="#toc-entry-11">Sunset length throughout the year</a></h2>
+<p>Sometimes I’ve wondered if there is much of a difference in the amount of time
+it takes the sun to set (that is the time from the full disc being visible and
+just touching the horizon, to none of it being visible and all below the horizon
+). The sun appears to be approximately half a degree in angular diameter on
+average when viewed from the earth’s surface. The easy way to have a go at
+graphing this is to therefore make two calculations based on two sunsets, one at
+0 degrees horizon, the other at -0.53 degrees horizon, and then compare.</p>
+<p>All times below are expressed in seconds.</p>
+<div class="highlight"><pre><span></span><span class="c1"># Prepare</span>
+<span class="n">home</span><span class="o">.</span><span class="n">date</span> <span class="o">=</span> <span class="s1">&#39;2017/04/01 12:00:00&#39;</span>
+<span class="n">home</span><span class="o">.</span><span class="n">horizon</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span>
+<span class="n">sun</span> <span class="o">=</span> <span class="n">ephem</span><span class="o">.</span><span class="n">Sun</span><span class="p">()</span>
+</pre></div>
+<p>Starting with the 0 degrees:</p>
+<div class="highlight"><pre><span></span><span class="n">s_start</span> <span class="o">=</span> <span class="n">home</span><span class="o">.</span><span class="n">next_setting</span><span class="p">(</span><span class="n">sun</span><span class="p">,</span> <span class="n">use_center</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">datetime</span><span class="p">()</span>
+<span class="n">s_start</span>
+</pre></div>
+<pre class="literal-block">
+datetime.datetime(2017, 4, 1, 18, 37, 13, 370468)
+</pre>
+<p>Now the -0.53 degrees:</p>
+<div class="highlight"><pre><span></span><span class="n">home</span><span class="o">.</span><span class="n">horizon</span> <span class="o">=</span> <span class="s1">&#39;-0.53&#39;</span>
+<span class="n">s_end</span> <span class="o">=</span> <span class="n">home</span><span class="o">.</span><span class="n">next_setting</span><span class="p">(</span><span class="n">sun</span><span class="p">,</span> <span class="n">use_center</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">datetime</span><span class="p">()</span>
+<span class="n">s_end</span>
+</pre></div>
+<pre class="literal-block">
+datetime.datetime(2017, 4, 1, 18, 41, 53, 696375)
+</pre>
+<p>The difference is…</p>
+<div class="highlight"><pre><span></span><span class="n">delta</span> <span class="o">=</span> <span class="n">s_end</span> <span class="o">-</span> <span class="n">s_start</span>
+<span class="n">delta</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">()</span>
+</pre></div>
+<pre class="literal-block">
+280.325907
+</pre>
+<p>Let’s go for a little run and finish off with a <tt class="docutils literal">pandas Series</tt> containing
+some data:</p>
+<div class="highlight"><pre><span></span><span class="n">home</span><span class="o">.</span><span class="n">date</span> <span class="o">=</span> <span class="s1">&#39;2017/01/01 12:00:00&#39;</span>
+<span class="n">settings</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">sun</span> <span class="o">=</span> <span class="n">ephem</span><span class="o">.</span><span class="n">Sun</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">368</span><span class="p">):</span>
+    <span class="n">home</span><span class="o">.</span><span class="n">date</span> <span class="o">+=</span> <span class="n">ephem</span><span class="o">.</span><span class="n">Date</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">home</span><span class="o">.</span><span class="n">horizon</span> <span class="o">=</span> <span class="s1">&#39;0&#39;</span>
+    <span class="n">start</span> <span class="o">=</span> <span class="n">home</span><span class="o">.</span><span class="n">next_setting</span><span class="p">(</span><span class="n">sun</span><span class="p">,</span> <span class="n">use_center</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">datetime</span><span class="p">()</span>
+    <span class="n">home</span><span class="o">.</span><span class="n">horizon</span> <span class="o">=</span> <span class="s1">&#39;-0.53&#39;</span>
+    <span class="n">end</span> <span class="o">=</span> <span class="n">home</span><span class="o">.</span><span class="n">next_setting</span><span class="p">(</span><span class="n">sun</span><span class="p">,</span> <span class="n">use_center</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">datetime</span><span class="p">()</span>
+    <span class="n">settings</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">end</span> <span class="o">-</span> <span class="n">start</span><span class="p">)</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">())</span>
+
+<span class="n">ts</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">settings</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="s1">&#39;2017/1/1&#39;</span><span class="p">,</span> <span class="n">periods</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">settings</span><span class="p">)))</span>
+</pre></div>
+<p>Examining a slice gives us:</p>
+<div class="highlight"><pre><span></span><span class="n">ts</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">12</span><span class="p">]</span>
+</pre></div>
+<pre class="literal-block">
+2017-01-01    353.504381
+2017-01-02    352.557403
+2017-01-03    351.549113
+2017-01-04    350.482556
+2017-01-05    349.360751
+2017-01-06    348.186956
+2017-01-07    346.964359
+2017-01-08    345.696319
+2017-01-09    344.386193
+2017-01-10    343.037395
+2017-01-11    341.653190
+2017-01-12    340.236993
+Freq: D, dtype: float64
+</pre>
+<p>Interestingly, the gap between slowest and fastest sunsets is really not that
+much at all. I may repeat this later by adding 6 degrees for civil twilight.</p>
+<div class="highlight"><pre><span></span><span class="n">ts</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="n">ts</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+</pre></div>
+<pre class="literal-block">
+(384.862166, 275.37453799999997)
+</pre>
+<p>The gap:</p>
+<div class="highlight"><pre><span></span><span class="n">ts</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">-</span> <span class="n">ts</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+</pre></div>
+<pre class="literal-block">
+109.48762800000003
+</pre>
+<p>Okay, well almost 2 minutes.</p>
+<p>Let’s make a chart and have a look at the results:</p>
+<div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">ts</span><span class="o">.</span><span class="n">plot</span><span class="o">.</span><span class="n">area</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s2">&quot;figure.figsize&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">9</span><span class="p">,</span> <span class="mi">6</span><span class="p">]</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="sa">u</span><span class="s1">&#39;Sunset length (seconds)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">11</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">([</span><span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">ts</span><span class="o">.</span><span class="n">min</span><span class="p">())</span> <span class="o">-</span> <span class="mi">15</span><span class="p">,</span> <span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">ts</span><span class="o">.</span><span class="n">max</span><span class="p">())</span> <span class="o">+</span> <span class="mi">15</span><span class="p">])</span>
+<span class="c1"># Fire</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+<p>&nbsp;</p>
+<img alt="A plot of sunset maxima and minima" src="https://live.staticflickr.com/65535/49368284102_12b342961f_c.jpg" style="width: 568px; height: 383px;" />
+<p><em>A plot of sunset maxima and minima</em></p>
+<p>So from the graph above, it can be seen that there are two minima in the year
+where the sun sets the fastest - the middle of March and towards the end of
+September. The third week in June gives us the longest duration sunset, with the
+third week of December the second but smaller maximum of the year. These all
+correspond with the equinoxes and solstices as you would expect.</p>
+</div>
+<div class="section" id="conclusion">
+<h2><a class="toc-backref" href="#toc-entry-12">Conclusion</a></h2>
+<p>So there it is, fun times spent with PyEphem and our local star, and I’ve
+learned a thing or two along the way. I’ve got a few ideas for another article
+on this subject at some point, so keep your eyes peeled!</p>
+<!-- links -->
+</div>
+
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://astrodon.social/@53degrees"><i class="fa fa-mastodon-square fa-lg"></i> mastodon</a></li>
+    <li class="list-group-item"><a href="https://twitter.com/53_astro"><i class="fa fa-twitter-square fa-lg"></i> twitter</a></li>
+    <li class="list-group-item"><a href="https://www.instagram.com/53degreesastro"><i class="fa fa-instagram fa-lg"></i> instagram</a></li>
+    <li class="list-group-item"><a href="https://www.flickr.com/people/53-degrees-astro"><i class="fa fa-flickr fa-lg"></i> flickr</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+
+<!-- Sidebar/Recent Posts -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
+  <ul class="list-group" id="recentposts">
+    <li class="list-group-item"><a href="http://127.0.0.1:8000/posts/2021/10/fireball-capture-on-uk004b-15th-october-2021">Fireball Capture on UK004B 15th October 2021</a></li>
+    <li class="list-group-item"><a href="http://127.0.0.1:8000/posts/2020/06/moving-from-linux-to-windows">Moving from Linux to Windows</a></li>
+    <li class="list-group-item"><a href="http://127.0.0.1:8000/posts/2020/05/june-2020-roundup">June 2020 Roundup</a></li>
+    <li class="list-group-item"><a href="http://127.0.0.1:8000/posts/2020/05/building-a-raspberry-pi-flavoured-dslr-control-unit">Building a Raspberry Pi Flavoured DSLR Control Unit</a></li>
+    <li class="list-group-item"><a href="http://127.0.0.1:8000/posts/2020/04/april-2020-roundup">April 2020 Roundup</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Recent Posts -->
+
+<!-- Sidebar/Tag Cloud -->
+<li class="list-group-item">
+  <a href="http://127.0.0.1:8000/tags/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+  <ul class="list-group list-inline tagcloud" id="tags">
+    <li class="list-group-item tag-1">
+      <a href="http://127.0.0.1:8000/tag/astronomy">astronomy</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="http://127.0.0.1:8000/tag/astrophotography">astrophotography</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="http://127.0.0.1:8000/tag/astrophotograpy">astrophotograpy</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="http://127.0.0.1:8000/tag/engineering">engineering</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="http://127.0.0.1:8000/tag/equipment">equipment</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="http://127.0.0.1:8000/tag/global-meteor-network">global meteor network</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="http://127.0.0.1:8000/tag/hardware">hardware</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="http://127.0.0.1:8000/tag/linux">linux</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="http://127.0.0.1:8000/tag/meteor-camera">meteor camera</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="http://127.0.0.1:8000/tag/meteors">meteors</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="http://127.0.0.1:8000/tag/observing">observing</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="http://127.0.0.1:8000/tag/photography">photography</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="http://127.0.0.1:8000/tag/programming">programming</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="http://127.0.0.1:8000/tag/python">python</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="http://127.0.0.1:8000/tag/raspberrypi">raspberrypi</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="http://127.0.0.1:8000/tag/ukmon">ukmon</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="http://127.0.0.1:8000/tag/windows">windows</a>
+    </li>
+  </ul>
+</li>
+<!-- End Sidebar/Tag Cloud -->
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
+
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2022 53° Astro
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="http://127.0.0.1:8000/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="http://127.0.0.1:8000/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="http://127.0.0.1:8000/theme/js/respond.min.js"></script>
+
+
+    <script src="http://127.0.0.1:8000/theme/js/bodypadding.js"></script>
+
+
+</body>
+</html>

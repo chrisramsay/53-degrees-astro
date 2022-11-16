@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 # Main
 AUTHOR = '53° Astro'
 SITENAME = '53° Astro'
-SITEURL = 'http://172.17.0.2'
+SITEURL = 'http://127.0.0.1:8000'
 PATH = 'content'
 TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'en'
@@ -15,6 +15,7 @@ DEFAULT_METADATA = {
         'author': '53° Astro',
 }
 DEFAULT_DATE = 'fs'
+THEME = "/home/raz/pelican-themes/pelican-bootstrap3"
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -61,13 +62,14 @@ MONTH_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/index.html'
 
 # Social widget
 SOCIAL = (
-    ('twitter', 'http://twitter.com/53_astro'),
+    ('mastodon', 'https://astrodon.social/@53degrees'),
+    ('twitter', 'https://twitter.com/53_astro'),
     ('instagram', 'https://www.instagram.com/53degreesastro'),
     ('flickr', 'https://www.flickr.com/people/53-degrees-astro'),
     )
 
 # Theme and plugins
-PLUGIN_PATHS = ['/plugins', ]
+PLUGIN_PATHS = ['/home/raz/pelican-plugins', ]
 # Always put minify at the end of plugins list
 PLUGINS = [
     'i18n_subsites',
@@ -77,8 +79,7 @@ PLUGINS = [
     'render_math',
     'series',
     'tag_cloud',
-    'tipue_search',
-    'minify',
+    #'pelican_search',
     ]
 
 # Specific to pelican-bootstrap theme

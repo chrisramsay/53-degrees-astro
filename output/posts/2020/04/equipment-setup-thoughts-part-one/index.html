@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Equipment Setup Thoughts - Part One - 53° Astro</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="http://127.0.0.1:8000/posts/2020/04/equipment-setup-thoughts-part-one">
+
+        <meta name="author" content="53° Astro" />
+        <meta name="keywords" content="astronomy,hardware,engineering" />
+        <meta name="description" content="Setting up a new telescope is not an easy task. It takes some planning and thought to get the set up right first time. I have made an attempt to plan out everything that I will need before getting started. Using a handy copy of Visio I had lying about I have put together a handful of block level diagrams to help me out. This process gives me an overview of what is needed to make sure that the system is complete and that everything has been thought of, as far as possible. Following is a run through of my plans and my thoughts regarding what issues they raised." />
+
+        <meta property="og:site_name" content="53° Astro" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Equipment Setup Thoughts - Part One"/>
+        <meta property="og:url" content="http://127.0.0.1:8000/posts/2020/04/equipment-setup-thoughts-part-one"/>
+        <meta property="og:description" content="Setting up a new telescope is not an easy task. It takes some planning and thought to get the set up right first time. I have made an attempt to plan out everything that I will need before getting started. Using a handy copy of Visio I had lying about I have put together a handful of block level diagrams to help me out. This process gives me an overview of what is needed to make sure that the system is complete and that everything has been thought of, as far as possible. Following is a run through of my plans and my thoughts regarding what issues they raised."/>
+        <meta property="article:published_time" content="2020-04-03" />
+            <meta property="article:section" content="observing" />
+            <meta property="article:tag" content="astronomy" />
+            <meta property="article:tag" content="hardware" />
+            <meta property="article:tag" content="engineering" />
+            <meta property="article:author" content="53° Astro" />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="http://127.0.0.1:8000/theme/css/bootstrap.darkly.min.css" type="text/css"/>
+    <link href="http://127.0.0.1:8000/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="http://127.0.0.1:8000/theme/css/pygments/solarazeddark.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://127.0.0.1:8000/theme/css/style.css" type="text/css"/>
+
+
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://127.0.0.1:8000/" class="navbar-brand">
+53° Astro            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li >
+                            <a href="http://127.0.0.1:8000/category/astronomy">Astronomy</a>
+                        </li>
+                        <li >
+                            <a href="http://127.0.0.1:8000/category/astrophotography">Astrophotography</a>
+                        </li>
+                        <li class="active">
+                            <a href="http://127.0.0.1:8000/category/observing">Observing</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="http://127.0.0.1:8000/archives/"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<!-- Banner -->
+<!-- End Banner -->
+
+<!-- Content Container -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="http://127.0.0.1:8000/posts/2020/04/equipment-setup-thoughts-part-one"
+                       rel="bookmark"
+                       title="Permalink to Equipment Setup Thoughts - Part One">
+                        Equipment Setup Thoughts - Part One
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2020-04-03T00:00:00+02:00"> Fri 03 April 2020</time>
+    </span>
+
+
+            <span class="label label-default">By</span>
+            <a href="http://127.0.0.1:8000/author/53deg-astro"><i class="fa fa-user"></i> 53° Astro</a>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="http://127.0.0.1:8000/tag/astronomy">astronomy</a>
+        /
+	<a href="http://127.0.0.1:8000/tag/hardware">hardware</a>
+        /
+	<a href="http://127.0.0.1:8000/tag/engineering">engineering</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <div class="contents topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><a class="reference internal" href="#introduction" id="toc-entry-1">Introduction</a></li>
+<li><a class="reference internal" href="#block-level-diagrams" id="toc-entry-2">Block Level Diagrams</a><ul>
+<li><a class="reference internal" href="#imaging-train" id="toc-entry-3">Imaging Train</a></li>
+<li><a class="reference internal" href="#overall-block-plan" id="toc-entry-4">Overall Block Plan</a></li>
+<li><a class="reference internal" href="#usb-connections" id="toc-entry-5">USB Connections</a></li>
+<li><a class="reference internal" href="#power-and-network" id="toc-entry-6">Power and Network</a></li>
+<li><a class="reference internal" href="#next" id="toc-entry-7">Next?</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="introduction">
+<h2><a class="toc-backref" href="#toc-entry-1">Introduction</a></h2>
+
+<p>Setting up a new telescope is not an easy task. It takes some planning and
+thought to get the set up right first time. I have made an attempt to plan out
+everything that I will need before getting started. Using a handy copy of Visio
+I had lying about I have put together a handful of block level diagrams to help
+me out. This process gives me an overview of what is needed to make sure that
+the system is complete and that everything has been thought of, as far as
+possible. Following is a run through of my plans and my thoughts regarding what
+issues they raised.</p>
+
+<p>The basic idea has always been that the telescope should be automated as much as
+possible. The extent of the automation will that I will be able to put together
+an imaging session or two and set it running, all from the comfort of a warm
+room, via a remote desktop connection to an on board computer. In this case I
+consider an imaging session to be: target (re)acquisition, focus, capture a set
+of lights via a combination of filters, occasionally re-focus depending on
+temperature variation, take care of meridian flips if necessary, and finally
+shut down when the session is complete.</p>
+<p>For the (computing) brains behind the operation, a <a class="reference external" href="https://www.raspberrypi.org/products/raspberry-pi-4-model-b/">Raspberry Pi 4</a> has
+always been the goal, being that they are small, have reasonably low power
+requirements and run on Linux, an operating system I am truly comfortable with.</p>
+</div>
+<div class="section" id="block-level-diagrams">
+<h2><a class="toc-backref" href="#toc-entry-2">Block Level Diagrams</a></h2>
+<p>As can be seen, I started by preparing some block level diagrams to assist in
+mapping out the entire telescope set up. The set up has been divided into
+multiple blocks based on what the modules are transmitting from block to
+block. The imaging train transmits photons between blocks, so that seemed like
+a pretty obvious place to start:</p>
+<div class="section" id="imaging-train">
+<h3><a class="toc-backref" href="#toc-entry-3">Imaging Train</a></h3>
+<p>So this is how the image capture part of the set up currently looks. The photo
+below was taken whilst I was checking the back focus from the Skywatcher field
+flattener; it has to be 75 mm from a particular point on the flattener to the
+CCD chip surface, give or take a small amount to account for the refractive
+index of the filters.</p>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49842248133/in/dateposted-public/" title="Back focus"><img src="https://live.staticflickr.com/65535/49842248133_b6e7cdc679_c.jpg" width="800" height="533" alt="Back focus"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script><p><em>Imaging train in real life</em></p>
+<p>As is apparent in the photo above, I have not yet added the off axis guide
+camera (OAG) to the set up. That will happen once I have the main imaging camera
+properly focused. From right to left, the image shows the Skywatcher field
+flattener, a custom made 15 mm spacer, a Starlight Xpress Loadstar 2 camera
+mounted onto an off axis guider assembly, 7 position filter wheel and finally
+the Starlight Xpress CCD imaging camera. The interfaces between the rear face of
+the field flattener and the front face of the OAG / filter wheel are a male M62
+thread and a male T-thread (42 mm) respectively, necessitating a custom made
+15 mm spacer beautifully engineered by John at <a class="reference external" href="https://j-techdesign.com/">J-Tech Design</a>.</p>
+<p>Once everything was together it was time to get drawing. Below is a plan of just
+the imaging train as above with the light path shown with blue arrows. Not much
+in itself, but it makes sense once it is part of the rest of the plan.</p>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49842860941/in/dateposted-public/" title="block-level-imaging-train_49733170848_o"><img src="https://live.staticflickr.com/65535/49842860941_748ee9cc21_c.jpg" width="800" height="577" alt="block-level-imaging-train_49733170848_o"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script><p><em>Block level imaging train plan</em></p>
+</div>
+<div class="section" id="overall-block-plan">
+<h3><a class="toc-backref" href="#toc-entry-4">Overall Block Plan</a></h3>
+<p>Next was to try and understand just how many cables will be needed, what type
+and what sort of lengths. Also, each piece of the puzzle has different types of
+USB connections. Thankfully everything that requires 12 V has the same, centre
+positive 5.5 mm by 2.1 mm connectors. That definitely makes life easier!</p>
+<p>Additionally, the plan below has helped me to make sense of what was needed for
+both power distribution and USB connections. Once everything is laid out, it
+starts to become obvious where things are missing, such as: I need to think
+about getting a powered USB hub, or, do I have enough USB A to USB B leads?</p>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49842317213/in/dateposted-public/" title="block-level-telescope_49730949866_o"><img src="https://live.staticflickr.com/65535/49842317213_acebaa6caa_c.jpg" width="800" height="635" alt="block-level-telescope_49730949866_o"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script><p><em>Block level physical connections</em></p>
+<p>The block plan has also made sure that I have not forgotten about getting power
+to the Raspberry Pi 4; these latest models are now powered via a USB C
+connector. The initial plan for this was a step down converter from 12 V to 5 V
+and then somehow butcher a USB-C lead to provide the power to the Pi. Other
+options I have considered are, for example, sending a 5 volt supply via the
+header pins on the Raspberry Pi circuit board; unfortunately this bypasses some
+current protection devices in the process, so probably not the best idea.</p>
+</div>
+<div class="section" id="usb-connections">
+<h3><a class="toc-backref" href="#toc-entry-5">USB Connections</a></h3>
+<p>From the overall plan I subsequently extracted the devices with a USB connection
+and any associated USB cable. This leads me to my first thought with the USB
+layout... I need a powered USB hub, and therefore power to run the hub itself. I
+will ideally need to find a hub that will run from a 12 V supply (and in a
+really ideal world, having a 5.5 x 2.1 centre positive power feed!) to try and
+keep the amount of adaptations down to a minimum.</p>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49842315963/in/dateposted-public/" title="block-level-usb_49733170253_o"><img src="https://live.staticflickr.com/65535/49842315963_e2496699d2_c.jpg" width="800" height="569" alt="block-level-usb_49733170253_o"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script><p><em>Block level USB connections</em></p>
+<p>Regarding cables, I am going to need a mix of different types. A number of mini
+to mini and mini to USB B cables to connect to the in-built hub on the SX 814 to
+provide power and control for the off axis guide camera, the filter wheel and
+the focus cube. The in-built hub on the imaging camera will then be connected to
+a theoretical standalone powered USB hub, and from there communicate with the
+Raspberry Pi. Control of the EQ6R Pro mount will be achieved via a Lynx Astro
+USB to EQ direct lead from this standalone hub also.</p>
+<p>Thankfully I have a habit of hoarding old cables and connectors that come with
+electrical items purchased over the years. This has come in useful as I have
+been able to find all the leads as required for the cable layout on the
+telescope.</p>
+</div>
+<div class="section" id="power-and-network">
+<h3><a class="toc-backref" href="#toc-entry-6">Power and Network</a></h3>
+<p>Once I was happy with the USB layout, it was time to turn to looking at the
+power and network layer. Again, the plan only has items that require power from
+12 V cables and the cable runs themselves.</p>
+<p>From the plan, it appears that I am going to need to find a neat way of
+distributing 12 volts to a number of different bits of equipment on the
+telescope. I have spent quite some time on the astronomy forums researching how
+people achieve this. There does not really seem to be a single standard - no
+surprises there. Some systems seem to be based on automotive type connectors
+with blade fuses and so on, others utilise &quot;Anderson Power Pole&quot; connectors as
+used by the Ham Radio community. This is something that definitely needs more
+thought.</p>
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49842317553/in/dateposted-public/" title="block-level-power_49734039312_o"><img src="https://live.staticflickr.com/65535/49842317553_d7c9fc9b13_c.jpg" width="800" height="564" alt="block-level-power_49734039312_o"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script><p><em>Block level power and network connections</em></p>
+<p>Some thought needs to be put towards handling dew that will no doubt build up on
+the objective lens on the telescope. Currently, I have a home built dew
+prevention system that requires a 12 volt supply (not a problem then) but it is
+very bulky; finding some space to mount it might be quite tricky.</p>
+</div>
+<div class="section" id="next">
+<h3><a class="toc-backref" href="#toc-entry-7">Next?</a></h3>
+<p>The gold standard (perfect) solution for all this would be a combined USB hub
+and 12 V power supply complete with a dew heater controller system. I wonder if
+such a thing exists?</p>
+<!-- links -->
+</div>
+</div>
+
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+<!-- Sidebar -->
+<section class="well well-sm">
+  <ul class="list-group list-group-flush">
+
+<!-- Sidebar/Social -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+  <ul class="list-group" id="social">
+    <li class="list-group-item"><a href="https://astrodon.social/@53degrees"><i class="fa fa-mastodon-square fa-lg"></i> mastodon</a></li>
+    <li class="list-group-item"><a href="https://twitter.com/53_astro"><i class="fa fa-twitter-square fa-lg"></i> twitter</a></li>
+    <li class="list-group-item"><a href="https://www.instagram.com/53degreesastro"><i class="fa fa-instagram fa-lg"></i> instagram</a></li>
+    <li class="list-group-item"><a href="https://www.flickr.com/people/53-degrees-astro"><i class="fa fa-flickr fa-lg"></i> flickr</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Social -->
+
+<!-- Sidebar/Recent Posts -->
+<li class="list-group-item">
+  <h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
+  <ul class="list-group" id="recentposts">
+    <li class="list-group-item"><a href="http://127.0.0.1:8000/posts/2021/10/fireball-capture-on-uk004b-15th-october-2021">Fireball Capture on UK004B 15th October 2021</a></li>
+    <li class="list-group-item"><a href="http://127.0.0.1:8000/posts/2020/06/moving-from-linux-to-windows">Moving from Linux to Windows</a></li>
+    <li class="list-group-item"><a href="http://127.0.0.1:8000/posts/2020/05/june-2020-roundup">June 2020 Roundup</a></li>
+    <li class="list-group-item"><a href="http://127.0.0.1:8000/posts/2020/05/building-a-raspberry-pi-flavoured-dslr-control-unit">Building a Raspberry Pi Flavoured DSLR Control Unit</a></li>
+    <li class="list-group-item"><a href="http://127.0.0.1:8000/posts/2020/04/april-2020-roundup">April 2020 Roundup</a></li>
+  </ul>
+</li>
+<!-- End Sidebar/Recent Posts -->
+
+<!-- Sidebar/Tag Cloud -->
+<li class="list-group-item">
+  <a href="http://127.0.0.1:8000/tags/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+  <ul class="list-group list-inline tagcloud" id="tags">
+    <li class="list-group-item tag-1">
+      <a href="http://127.0.0.1:8000/tag/astronomy">astronomy</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="http://127.0.0.1:8000/tag/astrophotography">astrophotography</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="http://127.0.0.1:8000/tag/astrophotograpy">astrophotograpy</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="http://127.0.0.1:8000/tag/engineering">engineering</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="http://127.0.0.1:8000/tag/equipment">equipment</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="http://127.0.0.1:8000/tag/global-meteor-network">global meteor network</a>
+    </li>
+    <li class="list-group-item tag-2">
+      <a href="http://127.0.0.1:8000/tag/hardware">hardware</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="http://127.0.0.1:8000/tag/linux">linux</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="http://127.0.0.1:8000/tag/meteor-camera">meteor camera</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="http://127.0.0.1:8000/tag/meteors">meteors</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="http://127.0.0.1:8000/tag/observing">observing</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="http://127.0.0.1:8000/tag/photography">photography</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="http://127.0.0.1:8000/tag/programming">programming</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="http://127.0.0.1:8000/tag/python">python</a>
+    </li>
+    <li class="list-group-item tag-3">
+      <a href="http://127.0.0.1:8000/tag/raspberrypi">raspberrypi</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="http://127.0.0.1:8000/tag/ukmon">ukmon</a>
+    </li>
+    <li class="list-group-item tag-4">
+      <a href="http://127.0.0.1:8000/tag/windows">windows</a>
+    </li>
+  </ul>
+</li>
+<!-- End Sidebar/Tag Cloud -->
+  </ul>
+</section>
+<!-- End Sidebar -->            </aside>
+        </div>
+    </div>
+</div>
+<!-- End Content Container -->
+
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2022 53° Astro
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="http://127.0.0.1:8000/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="http://127.0.0.1:8000/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="http://127.0.0.1:8000/theme/js/respond.min.js"></script>
+
+
+    <script src="http://127.0.0.1:8000/theme/js/bodypadding.js"></script>
+
+
+</body>
+</html>

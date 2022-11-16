@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/chrisramsay
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://53-degrees-astro.com
+  * I am chrisramsay (https://keybase.io/chrisramsay) on keybase.
+  * I have a public key ASAfp1QJTByhB5YqCWJATucbLkWOYZ0Xp-SnuyiWFCPTdgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01014065ba7be8eedadd61ae97fae6dec09b6e97659350bbd12646593ab741fa5c1f0a",
+      "host": "keybase.io",
+      "kid": "01201fa754094c1ca107962a0962404ee71b2e458e619d17a7e4a7bb28961423d3760a",
+      "uid": "0787a507dc4af37bbfee656a33dd1000",
+      "username": "chrisramsay"
+    },
+    "merkle_root": {
+      "ctime": 1579359476,
+      "hash": "8eb17edcfd0fff9245bec36c428577448b906cbb89f24374ba1c9d3ab46adb60cf54282cf70d3f5f550a84b3f1cd4a62e3f21f88c31a2516aaf0d961b9c4bc65",
+      "hash_meta": "701e0f4e8b92f913c38b53a79e34d12eb2d707b637b012137d7de2b6ea5fd548",
+      "seqno": 14275654
+    },
+    "service": {
+      "entropy": "E2N3EMqJGWeSJib/z8fHAFhe",
+      "hostname": "53-degrees-astro.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.1.1"
+  },
+  "ctime": 1579359485,
+  "expire_in": 504576000,
+  "prev": "7b7336825096903a3ee987737175b7c5ee045d98ac7699548aa3a2e60a53f961",
+  "seqno": 44,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgH6dUCUwcoQeWKgliQE7nGy5FjmGdF6fkp7solhQj03YKp3BheWxvYWTESpcCLMQge3M2glCWkDo+6YdzcXW3xe4EXZisdplUiqOi5gpT+WHEIEQDORfo+KhHChbsgv79juuJCfnDDhBcBWIk5SgnIR1KAgHCo3NpZ8RAvKpRNdlsZi0iYKeteGMyypPnjNXI56v83wFbmOTzmL47n66KQpXBnt45llby8xC/Zj5F+Yc4eYNQg9qsSR51DKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIEHRYcrIwk0/MizDC5T4YVEgPn9vmkYkrH/f9vCHezhvo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/chrisramsay
+
+==================================================================
