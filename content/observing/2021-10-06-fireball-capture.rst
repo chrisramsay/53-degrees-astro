@@ -64,7 +64,7 @@ Captured Image
 
 .. raw:: html
 
-    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/49896351413/in/dateposted-public/" title="astropi-dslr Parts"><img src="hhttps://live.staticflickr.com/65535/51978815736_217e5910c2_b.jpg" width="800" height="533" alt="Still from Fireball Capture on UK004B 15th October 2021 20:20:31 UTC"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <a data-flickr-embed="true" href="https://www.flickr.com/photos/53-degrees-astro/51978815736/" title="Still from Fireball Capture on UK004B 15th October 2021"><img src="https://live.staticflickr.com/65535/51978815736_217e5910c2_b.jpg" width="1024" height="576" alt="Still from Fireball Capture on UK004B 15th October 2021"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 *Still from Fireball Capture on UK004B 15th October 2021 20:20:31 UTC*
 
